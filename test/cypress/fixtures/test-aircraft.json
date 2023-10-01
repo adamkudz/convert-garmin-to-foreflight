@@ -1,0 +1,15 @@
+{
+	"AircraftId": "N321FF",
+	"EquipmentType": "Aircraft",
+	"TypeCode": "TBM8",
+	"Make": "Socata",
+	"Model": "TBM 850",
+	"Category": "airplane",
+	"Class": "airplane_single_engine_land",
+	"GearType": "retractable_tricycle",
+	"EngineType": "Turboprop",
+	"Complex": true,
+	"TAA": true,
+	"HighPerformance": true,
+	"Pressurized": true
+}

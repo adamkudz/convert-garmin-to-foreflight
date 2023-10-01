@@ -1,0 +1,3038 @@
+{
+	"userPinia": {
+		"logbookUser": {
+			"_id": "63cec9236122fc06b503e164",
+			"aud": "authenticated",
+			"exp": 1674499890,
+			"sub": "3cf14142-2474-488d-8732-20fa92c8c176",
+			"email": "few-teacher@l6smqfno.mailosaur.net",
+			"phone": "",
+			"app_metadata": { "provider": "email", "providers": ["email"] },
+			"user_metadata": {},
+			"role": "authenticated",
+			"aal": "aal1",
+			"amr": [{ "method": "otp", "timestamp": 1674496290 }],
+			"session_id": "8362a041-4f39-4cdb-b565-9c0ceb721759",
+			"aircraft": {
+				"AircraftId": "N321FF",
+				"EquipmentType": "Aircraft",
+				"TypeCode": "TBM8",
+				"Make": "Socata",
+				"Model": "TBM 850",
+				"Category": "airplane",
+				"Class": "airplane_single_engine_land",
+				"GearType": "retractable_tricycle",
+				"EngineType": "Turboprop",
+				"Complex": true,
+				"TAA": true,
+				"HighPerformance": true,
+				"Pressurized": true
+			},
+			"logbookEntries": [],
+			"uid": "3cf14142-2474-488d-8732-20fa92c8c176"
+		},
+		"newAircraft": null,
+		"flightEntries": [
+			{
+				"_id": "2eb83860-1217-4022-9683-4fd37f9b84e0",
+				"Distance": "105",
+				"AircraftID": "N321FF",
+				"Date": "2022-11-13",
+				"TimeOut": "2022-11-13T23:19:02.000Z",
+				"TimeIn": "2022-11-14T00:08:28.000Z",
+				"From": "KOQU",
+				"To": "KFRG",
+				"Route": "SEY HTO CCC PAZTA SHYNA TRCCY ALFED RW32 ",
+				"TotalTime": 0.8,
+				"DayTakeoffs": 0,
+				"DayLandingsFullStop": 0,
+				"NightTakeoffs": 1,
+				"NightLandingsFullStop": 1,
+				"positionData": [
+					{
+						"name": "SEY",
+						"info": {
+							"lcltime": "14:20:07",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.5943298,
+							"longitude": -71.4129638,
+							"ias": 0,
+							"atvwpt": "SEY",
+							"altmsl": -14.8,
+							"tas": 0,
+							"vspd": -0.74
+						}
+					},
+					{
+						"name": "HTO",
+						"info": {
+							"lcltime": "14:30:48",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.269318,
+							"longitude": -71.5490697,
+							"ias": 218.52,
+							"atvwpt": "HTO",
+							"altmsl": 4055.2,
+							"tas": 232,
+							"vspd": -93.17
+						}
+					},
+					{
+						"name": "CCC",
+						"info": {
+							"lcltime": "14:42:46",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 40.9216328,
+							"longitude": -72.3189534,
+							"ias": 216.33,
+							"atvwpt": "CCC",
+							"altmsl": 6055.5,
+							"tas": 236,
+							"vspd": 140.21
+						}
+					},
+					{
+						"name": "PAZTA",
+						"info": {
+							"lcltime": "14:49:43",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 40.9291473,
+							"longitude": -72.8000034,
+							"ias": 201.39,
+							"atvwpt": "PAZTA",
+							"altmsl": 5780.1,
+							"tas": 218,
+							"vspd": -945.09
+						}
+					},
+					{
+						"name": "SHYNA",
+						"info": {
+							"lcltime": "14:52:31",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 40.8763499,
+							"longitude": -72.9971697,
+							"ias": 188.93,
+							"atvwpt": "SHYNA",
+							"altmsl": 3988.6,
+							"tas": 199,
+							"vspd": -38.64
+						}
+					},
+					{
+						"name": "TRCCY",
+						"info": {
+							"lcltime": "14:56:54",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 40.6723407,
+							"longitude": -73.1709075,
+							"ias": 177.66,
+							"atvwpt": "TRCCY",
+							"altmsl": 2004,
+							"tas": 181,
+							"vspd": -545.49
+						}
+					},
+					{
+						"name": "ALFED",
+						"info": {
+							"lcltime": "14:58:27",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 40.6237791,
+							"longitude": -73.2439783,
+							"ias": 163.57,
+							"atvwpt": "ALFED",
+							"altmsl": 2064.8,
+							"tas": 167,
+							"vspd": 25.82
+						}
+					},
+					{
+						"name": "RW32",
+						"info": {
+							"lcltime": "15:01:23",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 40.6786132,
+							"longitude": -73.3411143,
+							"ias": 114.93,
+							"atvwpt": "RW32",
+							"altmsl": 1469.5,
+							"tas": 116,
+							"vspd": -454.97
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "14:23:28",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.591149,
+							"longitude": -71.4061924,
+							"ias": 53.66,
+							"atvwpt": "SEY",
+							"altmsl": 8.2,
+							"tas": 54,
+							"vspd": 46.5
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "15:04:53",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 40.7256427,
+							"longitude": -73.4087094,
+							"ias": 51.28,
+							"atvwpt": "RW32",
+							"altmsl": 66.5,
+							"tas": 51,
+							"vspd": 47.27
+						}
+					}
+				],
+				"originalFilename": "log_221113_141812_KOQU.csv"
+			},
+			{
+				"_id": "0c814187-1938-4c40-8856-e3a267930c2d",
+				"Distance": "105",
+				"AircraftID": "N321FF",
+				"Date": "2022-11-13",
+				"TimeOut": "2022-11-13T19:17:26.000Z",
+				"TimeIn": "2022-11-13T20:07:50.000Z",
+				"From": "KFRG",
+				"To": "KOQU",
+				"Route": "GARMN BDR MAD CARLD KURTY GON KOQU CONEZ HULEM RW34 ",
+				"TotalTime": 0.8,
+				"DayTakeoffs": 1,
+				"DayLandingsFullStop": 1,
+				"NightTakeoffs": 0,
+				"NightLandingsFullStop": 0,
+				"positionData": [
+					{
+						"name": "GARMN",
+						"info": {
+							"lcltime": "10:16:36",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": null,
+							"longitude": null,
+							"ias": 0,
+							"atvwpt": "GARMN",
+							"altmsl": null,
+							"tas": 0,
+							"vspd": -7.84
+						}
+					},
+					{
+						"name": "BDR",
+						"info": {
+							"lcltime": "10:21:08",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 40.7212677,
+							"longitude": -73.4161758,
+							"ias": 0,
+							"atvwpt": "BDR",
+							"altmsl": 58.3,
+							"tas": 0,
+							"vspd": -18.55
+						}
+					},
+					{
+						"name": "MAD",
+						"info": {
+							"lcltime": "10:36:26",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.1577832,
+							"longitude": -73.1200218,
+							"ias": 205.42,
+							"atvwpt": "MAD",
+							"altmsl": 7078.5,
+							"tas": 229,
+							"vspd": 222.89
+						}
+					},
+					{
+						"name": "CARLD",
+						"info": {
+							"lcltime": "10:41:21",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.3136573,
+							"longitude": -72.6899775,
+							"ias": 203.05,
+							"atvwpt": "CARLD",
+							"altmsl": 7075.2,
+							"tas": 226,
+							"vspd": -46.43
+						}
+					},
+					{
+						"name": "KURTY",
+						"info": {
+							"lcltime": "10:43:18",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.3659458,
+							"longitude": -72.5349023,
+							"ias": 171.44,
+							"atvwpt": "KURTY",
+							"altmsl": 7024.1,
+							"tas": 191,
+							"vspd": -53.91
+						}
+					},
+					{
+						"name": "GON",
+						"info": {
+							"lcltime": "10:46:33",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.3468646,
+							"longitude": -72.266308,
+							"ias": 198.08,
+							"atvwpt": "GON",
+							"altmsl": 5512.9,
+							"tas": 215,
+							"vspd": -1129.43
+						}
+					},
+					{
+						"name": "KOQU",
+						"info": {
+							"lcltime": "10:49:13",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.3329044,
+							"longitude": -72.0510003,
+							"ias": 182.05,
+							"atvwpt": "KOQU",
+							"altmsl": 5069.3,
+							"tas": 197,
+							"vspd": -85.94
+						}
+					},
+					{
+						"name": "CONEZ",
+						"info": {
+							"lcltime": "10:51:27",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.399124,
+							"longitude": -71.8866383,
+							"ias": 197.6,
+							"atvwpt": "CONEZ",
+							"altmsl": 4449.3,
+							"tas": 212,
+							"vspd": -1481.4
+						}
+					},
+					{
+						"name": "HULEM",
+						"info": {
+							"lcltime": "11:02:27",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.5310154,
+							"longitude": -71.3490924,
+							"ias": 109.03,
+							"atvwpt": "HULEM",
+							"altmsl": 3012,
+							"tas": 115,
+							"vspd": -42.87
+						}
+					},
+					{
+						"name": "RW34",
+						"info": {
+							"lcltime": "11:03:33",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.5622927,
+							"longitude": -71.3793807,
+							"ias": 126.18,
+							"atvwpt": "RW34",
+							"altmsl": 1725.5,
+							"tas": 129,
+							"vspd": -2042.04
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "10:27:47",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 40.7241855,
+							"longitude": -73.4143144,
+							"ias": 54.05,
+							"atvwpt": "BDR",
+							"altmsl": 69,
+							"tas": 54,
+							"vspd": 155.45
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "11:05:07",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.5952834,
+							"longitude": -71.4100567,
+							"ias": 50.39,
+							"atvwpt": "RW34",
+							"altmsl": 10.2,
+							"tas": 50,
+							"vspd": 22.35
+						}
+					}
+				],
+				"originalFilename": "log_221113_101608_KFRG.csv"
+			},
+			{
+				"_id": "7fd10ebf-b094-42a1-bb37-e6c9d83bace3",
+				"Distance": "214",
+				"AircraftID": "N321FF",
+				"Date": "2022-11-28",
+				"TimeOut": "2022-11-28T18:55:03.000Z",
+				"TimeIn": "2022-11-28T20:25:13.000Z",
+				"From": "KIAD",
+				"To": "KFRG",
+				"Route": "WOOLY AGARD SPEAK CANNY DONIL ACY PANZE ZIGGI ZIGGI-1 KFRG ALFED ",
+				"TotalTime": 1.5,
+				"DayTakeoffs": 1,
+				"DayLandingsFullStop": 1,
+				"NightTakeoffs": 0,
+				"NightLandingsFullStop": 0,
+				"positionData": [
+					{
+						"name": "WOOLY",
+						"info": {
+							"lcltime": "08:58:39",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 38.9693374,
+							"longitude": -77.453041,
+							"ias": 0,
+							"atvwpt": "WOOLY",
+							"altmsl": 278.9,
+							"tas": 0,
+							"vspd": -12.75
+						}
+					},
+					{
+						"name": "AGARD",
+						"info": {
+							"lcltime": "09:33:31",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.3335947,
+							"longitude": -77.034497,
+							"ias": 174.26,
+							"atvwpt": "AGARD",
+							"altmsl": 15140.6,
+							"tas": 221,
+							"vspd": 343.68
+						}
+					},
+					{
+						"name": "SPEAK",
+						"info": {
+							"lcltime": "09:42:58",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.0459261,
+							"longitude": -76.0669287,
+							"ias": 202.87,
+							"atvwpt": "SPEAK",
+							"altmsl": 17236.4,
+							"tas": 264,
+							"vspd": -124.4
+						}
+					},
+					{
+						"name": "CANNY",
+						"info": {
+							"lcltime": "09:45:44",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.0571939,
+							"longitude": -75.7447623,
+							"ias": 204.06,
+							"atvwpt": "CANNY",
+							"altmsl": 17233.6,
+							"tas": 266,
+							"vspd": -3.24
+						}
+					},
+					{
+						"name": "DONIL",
+						"info": {
+							"lcltime": "09:46:19",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.0602088,
+							"longitude": -75.6770568,
+							"ias": 203.85,
+							"atvwpt": "DONIL",
+							"altmsl": 17236.3,
+							"tas": 266,
+							"vspd": 31.04
+						}
+					},
+					{
+						"name": "ACY",
+						"info": {
+							"lcltime": "09:47:11",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.064526,
+							"longitude": -75.5767527,
+							"ias": 201.67,
+							"atvwpt": "ACY",
+							"altmsl": 17235.1,
+							"tas": 263,
+							"vspd": -24.27
+						}
+					},
+					{
+						"name": "PANZE",
+						"info": {
+							"lcltime": "09:56:45",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.4565841,
+							"longitude": -74.5753658,
+							"ias": 207.78,
+							"atvwpt": "PANZE",
+							"altmsl": 15280.9,
+							"tas": 264,
+							"vspd": -64.83
+						}
+					},
+					{
+						"name": "ZIGGI",
+						"info": {
+							"lcltime": "09:59:48",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.6050735,
+							"longitude": -74.2984877,
+							"ias": 205.13,
+							"atvwpt": "ZIGGI",
+							"altmsl": 15261.1,
+							"tas": 260,
+							"vspd": 14.41
+						}
+					},
+					{
+						"name": "ZIGGI-1",
+						"info": {
+							"lcltime": "10:00:00",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.615673,
+							"longitude": -74.2813581,
+							"ias": 204.25,
+							"atvwpt": "ZIGGI-1",
+							"altmsl": 15292.2,
+							"tas": 259,
+							"vspd": 291.96
+						}
+					},
+					{
+						"name": "KFRG",
+						"info": {
+							"lcltime": "10:04:47",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.9681061,
+							"longitude": -74.0636563,
+							"ias": 215.58,
+							"atvwpt": "KFRG",
+							"altmsl": 9701.9,
+							"tas": 250,
+							"vspd": -1585.19
+						}
+					},
+					{
+						"name": "ALFED",
+						"info": {
+							"lcltime": "10:12:34",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 40.4381406,
+							"longitude": -73.6645909,
+							"ias": 218.67,
+							"atvwpt": "ALFED",
+							"altmsl": 2868.2,
+							"tas": 227,
+							"vspd": -1023.49
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "09:21:50",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 38.9340411,
+							"longitude": -77.4573416,
+							"ias": 51.51,
+							"atvwpt": "WOOLY",
+							"altmsl": 289,
+							"tas": 52,
+							"vspd": 125.9
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "10:22:14",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 40.7246999,
+							"longitude": -73.4073554,
+							"ias": 52.49,
+							"atvwpt": "ALFED",
+							"altmsl": 65.9,
+							"tas": 52,
+							"vspd": 25.85
+						}
+					}
+				],
+				"originalFilename": "log_221128_085409_KIAD.csv"
+			},
+			{
+				"_id": "a29e8be7-ae1c-476e-bdce-aec6cd4d9f60",
+				"Distance": "214",
+				"AircraftID": "N321FF",
+				"Date": "2022-11-19",
+				"TimeOut": "2022-11-19T17:44:02.000Z",
+				"TimeIn": "2022-11-19T19:19:09.000Z",
+				"From": "KFRG",
+				"To": "KIAD",
+				"Route": "ARD HIKES LRP HYPER SIGBE MOWAT HUSEL YACKK TICON SKINS RW01C ",
+				"TotalTime": 1.6,
+				"DayTakeoffs": 1,
+				"DayLandingsFullStop": 1,
+				"NightTakeoffs": 0,
+				"NightLandingsFullStop": 0,
+				"positionData": [
+					{
+						"name": "ARD",
+						"info": {
+							"lcltime": "08:47:09",
+							"lcldate": "2022-11-19",
+							"utcofst": "-04:00",
+							"latitude": 40.7212714,
+							"longitude": -73.4161835,
+							"ias": 0,
+							"atvwpt": "ARD",
+							"altmsl": 51.8,
+							"tas": 0,
+							"vspd": -10.72
+						}
+					},
+					{
+						"name": "HIKES",
+						"info": {
+							"lcltime": "09:14:09",
+							"lcldate": "2022-11-19",
+							"utcofst": "-04:00",
+							"latitude": 40.391451,
+							"longitude": -74.5206471,
+							"ias": 207.19,
+							"atvwpt": "HIKES",
+							"altmsl": 13543.4,
+							"tas": 251,
+							"vspd": 205.78
+						}
+					},
+					{
+						"name": "LRP",
+						"info": {
+							"lcltime": "09:22:39",
+							"lcldate": "2022-11-19",
+							"utcofst": "-04:00",
+							"latitude": 40.3871379,
+							"longitude": -75.1044435,
+							"ias": 207,
+							"atvwpt": "LRP",
+							"altmsl": 15424.9,
+							"tas": 258,
+							"vspd": 91.43
+						}
+					},
+					{
+						"name": "HYPER",
+						"info": {
+							"lcltime": "09:26:59",
+							"lcldate": "2022-11-19",
+							"utcofst": "-04:00",
+							"latitude": 40.3243208,
+							"longitude": -75.4028535,
+							"ias": 204.95,
+							"atvwpt": "HYPER",
+							"altmsl": 15409.9,
+							"tas": 255,
+							"vspd": -21.57
+						}
+					},
+					{
+						"name": "SIGBE",
+						"info": {
+							"lcltime": "08:54:42",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 39.6808107,
+							"longitude": -77.2228316,
+							"ias": 211.53,
+							"atvwpt": "SIGBE",
+							"altmsl": 9613.7,
+							"tas": 240,
+							"vspd": -6.67
+						}
+					},
+					{
+						"name": "MOWAT",
+						"info": {
+							"lcltime": "08:59:25",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 39.409681,
+							"longitude": -77.3627775,
+							"ias": 234.87,
+							"atvwpt": "MOWAT",
+							"altmsl": 6972.3,
+							"tas": 254,
+							"vspd": -925.92
+						}
+					},
+					{
+						"name": "HUSEL",
+						"info": {
+							"lcltime": "09:01:31",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 39.265403,
+							"longitude": -77.3606172,
+							"ias": 232.01,
+							"atvwpt": "HUSEL",
+							"altmsl": 4432.3,
+							"tas": 239,
+							"vspd": -1338.56
+						}
+					},
+					{
+						"name": "YACKK",
+						"info": {
+							"lcltime": "09:03:04",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 39.1638245,
+							"longitude": -77.358138,
+							"ias": 226.24,
+							"atvwpt": "YACKK",
+							"altmsl": 2920.2,
+							"tas": 229,
+							"vspd": 6.66
+						}
+					},
+					{
+						"name": "TICON",
+						"info": {
+							"lcltime": "09:07:14",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 38.9070886,
+							"longitude": -77.3575058,
+							"ias": 203.84,
+							"atvwpt": "TICON",
+							"altmsl": 2925.3,
+							"tas": 206,
+							"vspd": -40.22
+						}
+					},
+					{
+						"name": "SKINS",
+						"info": {
+							"lcltime": "09:09:17",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 38.7988601,
+							"longitude": -77.363176,
+							"ias": 188.16,
+							"atvwpt": "SKINS",
+							"altmsl": 2808.4,
+							"tas": 190,
+							"vspd": -667.42
+						}
+					},
+					{
+						"name": "RW01C",
+						"info": {
+							"lcltime": "09:11:00",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 38.8340246,
+							"longitude": -77.4470843,
+							"ias": 164.81,
+							"atvwpt": "RW01C",
+							"altmsl": 1952.8,
+							"tas": 165,
+							"vspd": 56.49
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "08:54:08",
+							"lcldate": "2022-11-19",
+							"utcofst": "-04:00",
+							"latitude": 40.7230367,
+							"longitude": -73.4049348,
+							"ias": 52.9,
+							"atvwpt": "ARD",
+							"altmsl": 61.5,
+							"tas": 51,
+							"vspd": 14.95
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "09:14:29",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 38.9459338,
+							"longitude": -77.4596859,
+							"ias": 51.02,
+							"atvwpt": "RW01C",
+							"altmsl": 284.2,
+							"tas": 50,
+							"vspd": 84.23
+						}
+					}
+				],
+				"originalFilename": "log_221119_084259_KFRG.csv"
+			},
+			{
+				"_id": "5b6846a7-ec22-4929-91b8-4f3568f42399",
+				"Distance": "214",
+				"AircraftID": "N321FF",
+				"Date": "2022-11-19",
+				"TimeOut": "2022-11-19T19:43:33.000Z",
+				"TimeIn": "2022-11-19T20:53:13.000Z",
+				"From": "KIAD",
+				"To": "KFRG",
+				"Route": "WOOLY AGARD DONIL ENO ZIGGI ZIGGI-1 KFRG ALFED RW32 ",
+				"TotalTime": 1.1,
+				"DayTakeoffs": 1,
+				"DayLandingsFullStop": 1,
+				"NightTakeoffs": 0,
+				"NightLandingsFullStop": 0,
+				"positionData": [
+					{
+						"name": "WOOLY",
+						"info": {
+							"lcltime": "09:57:11",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 39.0414381,
+							"longitude": -77.4832374,
+							"ias": 161.65,
+							"atvwpt": "WOOLY",
+							"altmsl": 4739.6,
+							"tas": 169,
+							"vspd": 1512.59
+						}
+					},
+					{
+						"name": "AGARD",
+						"info": {
+							"lcltime": "10:04:25",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 39.3315881,
+							"longitude": -77.0337812,
+							"ias": 165.87,
+							"atvwpt": "AGARD",
+							"altmsl": 12792.3,
+							"tas": 200,
+							"vspd": 1725.72
+						}
+					},
+					{
+						"name": "DONIL",
+						"info": {
+							"lcltime": "10:04:44",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 39.3284531,
+							"longitude": -77.0048975,
+							"ias": 164.65,
+							"atvwpt": "DONIL",
+							"altmsl": 13268.2,
+							"tas": 200,
+							"vspd": 1194.37
+						}
+					},
+					{
+						"name": "ENO",
+						"info": {
+							"lcltime": "10:14:08",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 39.1784113,
+							"longitude": -75.9770674,
+							"ias": 206.55,
+							"atvwpt": "ENO",
+							"altmsl": 16564.8,
+							"tas": 262,
+							"vspd": 49
+						}
+					},
+					{
+						"name": "ZIGGI",
+						"info": {
+							"lcltime": "10:17:55",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 39.2353458,
+							"longitude": -75.5165197,
+							"ias": 206.65,
+							"atvwpt": "ZIGGI",
+							"altmsl": 16560.9,
+							"tas": 262,
+							"vspd": -138.52
+						}
+					},
+					{
+						"name": "ZIGGI-1",
+						"info": {
+							"lcltime": "10:27:55",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 39.7810925,
+							"longitude": -74.5156686,
+							"ias": 202.62,
+							"atvwpt": "ZIGGI-1",
+							"altmsl": 14557.9,
+							"tas": 249,
+							"vspd": -64.04
+						}
+					},
+					{
+						"name": "KFRG",
+						"info": {
+							"lcltime": "10:33:20",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 40.0535948,
+							"longitude": -74.0140535,
+							"ias": 224.35,
+							"atvwpt": "KFRG",
+							"altmsl": 7728,
+							"tas": 247,
+							"vspd": -16.86
+						}
+					},
+					{
+						"name": "ALFED",
+						"info": {
+							"lcltime": "10:33:49",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 40.0845066,
+							"longitude": -73.9846703,
+							"ias": 217.43,
+							"atvwpt": "ALFED",
+							"altmsl": 7718.1,
+							"tas": 239,
+							"vspd": 32.93
+						}
+					},
+					{
+						"name": "RW32",
+						"info": {
+							"lcltime": "10:46:26",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 40.6781833,
+							"longitude": -73.3418278,
+							"ias": 124.98,
+							"atvwpt": "RW32",
+							"altmsl": 1645,
+							"tas": 124,
+							"vspd": -124.79
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "09:54:19",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 38.9341952,
+							"longitude": -77.4578825,
+							"ias": 55.01,
+							"atvwpt": null,
+							"altmsl": 290.2,
+							"tas": 54,
+							"vspd": -20.01
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "10:49:34",
+							"lcldate": "2022-11-19",
+							"utcofst": "-05:00",
+							"latitude": 40.7258097,
+							"longitude": -73.4089621,
+							"ias": 51.56,
+							"atvwpt": "RW32",
+							"altmsl": 64.8,
+							"tas": 50,
+							"vspd": -30.53
+						}
+					}
+				],
+				"originalFilename": "log_221119_094239_KIAD.csv"
+			},
+			{
+				"_id": "5ff19589-98b2-4a4f-b776-62fa6758593f",
+				"Distance": "214",
+				"AircraftID": "N321FF",
+				"Date": "2022-09-20",
+				"TimeOut": "2022-09-20T22:00:32.000Z",
+				"TimeIn": "2022-09-20T23:51:56.000Z",
+				"From": "KFRG",
+				"To": "KIAD",
+				"Route": "BEADS RBV HIKES LRP JOANE DELRO LIRCH BINNS HYPER-1 HYPER SIGBE MOWAT HUSEL YACKK TICON SKINS RW01C ",
+				"TotalTime": 1.9,
+				"DayTakeoffs": 1,
+				"DayLandingsFullStop": 0,
+				"NightTakeoffs": 0,
+				"NightLandingsFullStop": 1,
+				"positionData": [
+					{
+						"name": "BEADS",
+						"info": {
+							"lcltime": "14:04:32",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 40.7210693,
+							"longitude": -73.4161606,
+							"ias": 0,
+							"atvwpt": "BEADS",
+							"altmsl": 59.8,
+							"tas": 0,
+							"vspd": -0.44
+						}
+					},
+					{
+						"name": "RBV",
+						"info": {
+							"lcltime": "14:26:09",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 40.742822,
+							"longitude": -72.5739553,
+							"ias": 174.55,
+							"atvwpt": "RBV",
+							"altmsl": 11355.4,
+							"tas": 210,
+							"vspd": 1790.1
+						}
+					},
+					{
+						"name": "HIKES",
+						"info": {
+							"lcltime": "14:47:08",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 40.2999351,
+							"longitude": -74.1501007,
+							"ias": 196.2,
+							"atvwpt": "HIKES",
+							"altmsl": 20882.2,
+							"tas": 271,
+							"vspd": 7.75
+						}
+					},
+					{
+						"name": "LRP",
+						"info": {
+							"lcltime": "15:03:46",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 40.3802358,
+							"longitude": -75.6163356,
+							"ias": 201.63,
+							"atvwpt": "LRP",
+							"altmsl": 16755,
+							"tas": 262,
+							"vspd": -40.68
+						}
+					},
+					{
+						"name": "JOANE",
+						"info": {
+							"lcltime": "15:12:02",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 40.1201913,
+							"longitude": -76.2926599,
+							"ias": 229.34,
+							"atvwpt": "JOANE",
+							"altmsl": 12950.7,
+							"tas": 280,
+							"vspd": -1093.52
+						}
+					},
+					{
+						"name": "DELRO",
+						"info": {
+							"lcltime": "15:14:04",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 40.0438397,
+							"longitude": -76.4575945,
+							"ias": 207.33,
+							"atvwpt": "DELRO",
+							"altmsl": 12541.9,
+							"tas": 253,
+							"vspd": 63.9
+						}
+					},
+					{
+						"name": "LIRCH",
+						"info": {
+							"lcltime": "15:16:16",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.9654446,
+							"longitude": -76.62661,
+							"ias": 205.86,
+							"atvwpt": "LIRCH",
+							"altmsl": 12534.3,
+							"tas": 251,
+							"vspd": 20.6
+						}
+					},
+					{
+						"name": "BINNS",
+						"info": {
+							"lcltime": "15:20:07",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.8264365,
+							"longitude": -76.9240102,
+							"ias": 207.43,
+							"atvwpt": "BINNS",
+							"altmsl": 12554.8,
+							"tas": 253,
+							"vspd": 15.21
+						}
+					},
+					{
+						"name": "HYPER-1",
+						"info": {
+							"lcltime": "15:21:16",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.7850533,
+							"longitude": -77.0122314,
+							"ias": 203.04,
+							"atvwpt": "HYPER-1",
+							"altmsl": 12497.4,
+							"tas": 248,
+							"vspd": -500.14
+						}
+					},
+					{
+						"name": "HYPER",
+						"info": {
+							"lcltime": "15:23:52",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.6927088,
+							"longitude": -77.2076017,
+							"ias": 215.8,
+							"atvwpt": "HYPER",
+							"altmsl": 8354.3,
+							"tas": 247,
+							"vspd": -1626.36
+						}
+					},
+					{
+						"name": "SIGBE",
+						"info": {
+							"lcltime": "15:24:06",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.6811146,
+							"longitude": -77.2233691,
+							"ias": 224.82,
+							"atvwpt": "SIGBE",
+							"altmsl": 8041.1,
+							"tas": 256,
+							"vspd": -1345.3
+						}
+					},
+					{
+						"name": "MOWAT",
+						"info": {
+							"lcltime": "15:28:14",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.409142,
+							"longitude": -77.3622845,
+							"ias": 192.7,
+							"atvwpt": "MOWAT",
+							"altmsl": 4253,
+							"tas": 207,
+							"vspd": 423.85
+						}
+					},
+					{
+						"name": "HUSEL",
+						"info": {
+							"lcltime": "15:30:33",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.2647954,
+							"longitude": -77.3605634,
+							"ias": 190.81,
+							"atvwpt": "HUSEL",
+							"altmsl": 4185.3,
+							"tas": 205,
+							"vspd": -14.79
+						}
+					},
+					{
+						"name": "YACKK",
+						"info": {
+							"lcltime": "15:32:11",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.1635999,
+							"longitude": -77.3579619,
+							"ias": 192.28,
+							"atvwpt": "YACKK",
+							"altmsl": 4201.2,
+							"tas": 207,
+							"vspd": -47.15
+						}
+					},
+					{
+						"name": "TICON",
+						"info": {
+							"lcltime": "15:36:13",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 38.9075644,
+							"longitude": -77.3574598,
+							"ias": 209.64,
+							"atvwpt": "TICON",
+							"altmsl": 4224.1,
+							"tas": 225,
+							"vspd": 150.48
+						}
+					},
+					{
+						"name": "SKINS",
+						"info": {
+							"lcltime": "15:39:49",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 38.6821495,
+							"longitude": -77.3759712,
+							"ias": 190.88,
+							"atvwpt": "SKINS",
+							"altmsl": 4221.5,
+							"tas": 205,
+							"vspd": 20.58
+						}
+					},
+					{
+						"name": "RW01C",
+						"info": {
+							"lcltime": "15:44:01",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 38.8387191,
+							"longitude": -77.4617538,
+							"ias": 155.77,
+							"atvwpt": "RW01C",
+							"altmsl": 2757.3,
+							"tas": 164,
+							"vspd": -548.75
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "14:12:35",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 40.7234085,
+							"longitude": -73.4054587,
+							"ias": 51.78,
+							"atvwpt": "BEADS",
+							"altmsl": 63.8,
+							"tas": 53,
+							"vspd": 19.4
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "15:47:10",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 38.9530676,
+							"longitude": -77.4595472,
+							"ias": 50.03,
+							"atvwpt": "RW01C",
+							"altmsl": 276.1,
+							"tas": 52,
+							"vspd": -5.52
+						}
+					}
+				],
+				"originalFilename": "log_220920_135854_KFRG.csv"
+			},
+			{
+				"_id": "98636f24-8dbc-463d-ab26-ac012d6ce657",
+				"Distance": "214",
+				"AircraftID": "N321FF",
+				"Date": "2022-09-20",
+				"TimeOut": "2022-09-21T05:27:56.000Z",
+				"TimeIn": "2022-09-21T06:48:26.000Z",
+				"From": "KIAD",
+				"To": "KFRG",
+				"Route": "GARMN WOOLY AGARD SPEAK CANNY DONIL TUBER ACY PANZE ZIGGI ZIGGI-1 RW32 ",
+				"TotalTime": 1.3,
+				"DayTakeoffs": 0,
+				"DayLandingsFullStop": 0,
+				"NightTakeoffs": 1,
+				"NightLandingsFullStop": 1,
+				"positionData": [
+					{
+						"name": "GARMN",
+						"info": {
+							"lcltime": "21:27:27",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": null,
+							"longitude": null,
+							"ias": 0,
+							"atvwpt": "GARMN",
+							"altmsl": null,
+							"tas": 0,
+							"vspd": -3.84
+						}
+					},
+					{
+						"name": "WOOLY",
+						"info": {
+							"lcltime": "21:28:15",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 38.9688758,
+							"longitude": -77.4526062,
+							"ias": 0,
+							"atvwpt": "WOOLY",
+							"altmsl": 291.6,
+							"tas": 0,
+							"vspd": -8.98
+						}
+					},
+					{
+						"name": "AGARD",
+						"info": {
+							"lcltime": "21:51:15",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.3310387,
+							"longitude": -77.0338501,
+							"ias": 198.85,
+							"atvwpt": "AGARD",
+							"altmsl": 15748.4,
+							"tas": 254,
+							"vspd": 18.79
+						}
+					},
+					{
+						"name": "SPEAK",
+						"info": {
+							"lcltime": "22:01:18",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.0454094,
+							"longitude": -76.0670906,
+							"ias": 202.77,
+							"atvwpt": "SPEAK",
+							"altmsl": 17860.4,
+							"tas": 268,
+							"vspd": -119.91
+						}
+					},
+					{
+						"name": "CANNY",
+						"info": {
+							"lcltime": "22:04:24",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.0573594,
+							"longitude": -75.7443514,
+							"ias": 202.01,
+							"atvwpt": "CANNY",
+							"altmsl": 17845,
+							"tas": 267,
+							"vspd": -34
+						}
+					},
+					{
+						"name": "DONIL",
+						"info": {
+							"lcltime": "22:05:03",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.0602466,
+							"longitude": -75.6767926,
+							"ias": 201.39,
+							"atvwpt": "DONIL",
+							"altmsl": 17848.1,
+							"tas": 266,
+							"vspd": 9.18
+						}
+					},
+					{
+						"name": "TUBER",
+						"info": {
+							"lcltime": "22:08:38",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.0795035,
+							"longitude": -75.3050944,
+							"ias": 201.44,
+							"atvwpt": "TUBER",
+							"altmsl": 17845.9,
+							"tas": 266,
+							"vspd": -201.94
+						}
+					},
+					{
+						"name": "ACY",
+						"info": {
+							"lcltime": "22:15:16",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.3653689,
+							"longitude": -74.7497319,
+							"ias": 209.51,
+							"atvwpt": "ACY",
+							"altmsl": 17473.4,
+							"tas": 275,
+							"vspd": -1232.06
+						}
+					},
+					{
+						"name": "PANZE",
+						"info": {
+							"lcltime": "22:17:14",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.4554558,
+							"longitude": -74.574334,
+							"ias": 210.54,
+							"atvwpt": "PANZE",
+							"altmsl": 15690.2,
+							"tas": 269,
+							"vspd": -22.44
+						}
+					},
+					{
+						"name": "ZIGGI",
+						"info": {
+							"lcltime": "22:19:37",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.55977,
+							"longitude": -74.3820178,
+							"ias": 202.01,
+							"atvwpt": "ZIGGI",
+							"altmsl": 15681.8,
+							"tas": 258,
+							"vspd": 120.98
+						}
+					},
+					{
+						"name": "ZIGGI-1",
+						"info": {
+							"lcltime": "22:20:15",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.5950947,
+							"longitude": -74.3458229,
+							"ias": 200.73,
+							"atvwpt": "ZIGGI-1",
+							"altmsl": 15663.6,
+							"tas": 256,
+							"vspd": 39.97
+						}
+					},
+					{
+						"name": "RW32",
+						"info": {
+							"lcltime": "22:26:39",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 39.999072,
+							"longitude": -74.047193,
+							"ias": 241.59,
+							"atvwpt": "RW32",
+							"altmsl": 9256.7,
+							"tas": 279,
+							"vspd": -1593.76
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "21:39:15",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 38.9343839,
+							"longitude": -77.4585035,
+							"ias": 50.43,
+							"atvwpt": "WOOLY",
+							"altmsl": 287.6,
+							"tas": 51,
+							"vspd": 31.26
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "22:45:22",
+							"lcldate": "2022-09-20",
+							"utcofst": "-04:00",
+							"latitude": 40.7259362,
+							"longitude": -73.4091593,
+							"ias": 52.22,
+							"atvwpt": "RW32",
+							"altmsl": 67.8,
+							"tas": 53,
+							"vspd": 122.96
+						}
+					}
+				],
+				"originalFilename": "log_220920_212651_KIAD.csv"
+			},
+			{
+				"_id": "114adba6-c77c-4fd4-a55a-6c2a31b213db",
+				"Distance": "214",
+				"AircraftID": "N321FF",
+				"Date": "2022-09-10",
+				"TimeOut": "2022-09-11T03:36:50.000Z",
+				"TimeIn": "2022-09-11T05:01:27.000Z",
+				"From": "KIAD",
+				"To": "KFRG",
+				"Route": "WOOLY AGARD DONIL BRIGS DRIFT MANTA PLUME SHERL DUNEE SARDI DPK RW19 ",
+				"TotalTime": 1.4,
+				"DayTakeoffs": 0,
+				"DayLandingsFullStop": 0,
+				"NightTakeoffs": 1,
+				"NightLandingsFullStop": 1,
+				"positionData": [
+					{
+						"name": "WOOLY",
+						"info": {
+							"lcltime": "19:38:16",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 38.9688721,
+							"longitude": -77.4529495,
+							"ias": 0,
+							"atvwpt": "WOOLY",
+							"altmsl": 274.2,
+							"tas": 0,
+							"vspd": -7.15
+						}
+					},
+					{
+						"name": "AGARD",
+						"info": {
+							"lcltime": "19:54:25",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 39.3322147,
+							"longitude": -77.0348661,
+							"ias": 172.35,
+							"atvwpt": "AGARD",
+							"altmsl": 10903,
+							"tas": 206,
+							"vspd": 1563.03
+						}
+					},
+					{
+						"name": "DONIL",
+						"info": {
+							"lcltime": "19:58:08",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 39.2632883,
+							"longitude": -76.79101,
+							"ias": 156.81,
+							"atvwpt": "DONIL",
+							"altmsl": 16158.7,
+							"tas": 202,
+							"vspd": 1151.79
+						}
+					},
+					{
+						"name": "BRIGS",
+						"info": {
+							"lcltime": "20:10:21",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 39.1239689,
+							"longitude": -75.6792053,
+							"ias": 188.01,
+							"atvwpt": "BRIGS",
+							"altmsl": 17941.8,
+							"tas": 249,
+							"vspd": 52.05
+						}
+					},
+					{
+						"name": "DRIFT",
+						"info": {
+							"lcltime": "20:27:11",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 39.524997,
+							"longitude": -74.1390418,
+							"ias": 191,
+							"atvwpt": "DRIFT",
+							"altmsl": 17981,
+							"tas": 253,
+							"vspd": -171.47
+						}
+					},
+					{
+						"name": "MANTA",
+						"info": {
+							"lcltime": "20:32:55",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 39.814921,
+							"longitude": -73.6783529,
+							"ias": 205.67,
+							"atvwpt": "MANTA",
+							"altmsl": 13701.6,
+							"tas": 255,
+							"vspd": 17.11
+						}
+					},
+					{
+						"name": "PLUME",
+						"info": {
+							"lcltime": "20:34:46",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 39.9023407,
+							"longitude": -73.5416503,
+							"ias": 217.62,
+							"atvwpt": "PLUME",
+							"altmsl": 13196.2,
+							"tas": 267,
+							"vspd": -999.45
+						}
+					},
+					{
+						"name": "SHERL",
+						"info": {
+							"lcltime": "20:38:30",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 40.1180804,
+							"longitude": -73.2839858,
+							"ias": 231.53,
+							"atvwpt": "SHERL",
+							"altmsl": 9184.1,
+							"tas": 268,
+							"vspd": -1049.36
+						}
+					},
+					{
+						"name": "DUNEE",
+						"info": {
+							"lcltime": "20:40:58",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 40.2552816,
+							"longitude": -73.1202709,
+							"ias": 215.92,
+							"atvwpt": "DUNEE",
+							"altmsl": 7359.3,
+							"tas": 243,
+							"vspd": 40.87
+						}
+					},
+					{
+						"name": "SARDI",
+						"info": {
+							"lcltime": "20:42:17",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 40.3236965,
+							"longitude": -73.0391866,
+							"ias": 213.6,
+							"atvwpt": "SARDI",
+							"altmsl": 7360,
+							"tas": 241,
+							"vspd": -76.11
+						}
+					},
+					{
+						"name": "DPK",
+						"info": {
+							"lcltime": "20:45:27",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 40.4863109,
+							"longitude": -72.8434394,
+							"ias": 212.34,
+							"atvwpt": "DPK",
+							"altmsl": 7359.9,
+							"tas": 240,
+							"vspd": -29.7
+						}
+					},
+					{
+						"name": "RW19",
+						"info": {
+							"lcltime": "20:51:25",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 40.74337,
+							"longitude": -73.2063903,
+							"ias": 228.25,
+							"atvwpt": "RW19",
+							"altmsl": 3260.4,
+							"tas": 241,
+							"vspd": -825.54
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "19:42:23",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 38.9682606,
+							"longitude": -77.4593661,
+							"ias": 52.44,
+							"atvwpt": "WOOLY",
+							"altmsl": 270.6,
+							"tas": 53,
+							"vspd": -37.79
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "20:58:19",
+							"lcldate": "2022-09-10",
+							"utcofst": "-04:00",
+							"latitude": 40.7295446,
+							"longitude": -73.4144054,
+							"ias": 50.26,
+							"atvwpt": "RW19",
+							"altmsl": 74.8,
+							"tas": 51,
+							"vspd": -13.07
+						}
+					}
+				],
+				"originalFilename": "log_220910_193543_KIAD.csv"
+			},
+			{
+				"_id": "015bcddc-a2a7-45f8-af07-e089b825ea32",
+				"Distance": "214",
+				"AircraftID": "N321FF",
+				"Date": "2022-11-28",
+				"TimeOut": "2022-11-28T16:53:32.000Z",
+				"TimeIn": "2022-11-28T18:27:31.000Z",
+				"From": "KFRG",
+				"To": "KIAD",
+				"Route": "ARD LRP HYPER SIGBE MOWAT HUSEL YACKK TICON SKINS RW01C ",
+				"TotalTime": 1.6,
+				"DayTakeoffs": 1,
+				"DayLandingsFullStop": 1,
+				"NightTakeoffs": 0,
+				"NightLandingsFullStop": 0,
+				"positionData": [
+					{
+						"name": "ARD",
+						"info": {
+							"lcltime": "06:55:08",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 40.7212791,
+							"longitude": -73.4161987,
+							"ias": 0,
+							"atvwpt": "ARD",
+							"altmsl": 61.2,
+							"tas": 0,
+							"vspd": -10.2
+						}
+					},
+					{
+						"name": "LRP",
+						"info": {
+							"lcltime": "07:26:59",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 40.3238464,
+							"longitude": -74.6740774,
+							"ias": 200.85,
+							"atvwpt": "LRP",
+							"altmsl": 14232.9,
+							"tas": 252,
+							"vspd": 525.82
+						}
+					},
+					{
+						"name": "HYPER",
+						"info": {
+							"lcltime": "07:41:12",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 40.191272,
+							"longitude": -75.7488284,
+							"ias": 205.13,
+							"atvwpt": "HYPER",
+							"altmsl": 16252.1,
+							"tas": 264,
+							"vspd": 5.03
+						}
+					},
+					{
+						"name": "SIGBE",
+						"info": {
+							"lcltime": "08:00:47",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.6799253,
+							"longitude": -77.2217984,
+							"ias": 232.02,
+							"atvwpt": "SIGBE",
+							"altmsl": 8307.5,
+							"tas": 263,
+							"vspd": -1060.9
+						}
+					},
+					{
+						"name": "MOWAT",
+						"info": {
+							"lcltime": "08:04:44",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.4084129,
+							"longitude": -77.3619086,
+							"ias": 233.07,
+							"atvwpt": "MOWAT",
+							"altmsl": 4759.1,
+							"tas": 249,
+							"vspd": -874.62
+						}
+					},
+					{
+						"name": "HUSEL",
+						"info": {
+							"lcltime": "08:06:43",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.265437,
+							"longitude": -77.3606357,
+							"ias": 202.41,
+							"atvwpt": "HUSEL",
+							"altmsl": 4088.9,
+							"tas": 213,
+							"vspd": 140.65
+						}
+					},
+					{
+						"name": "YACKK",
+						"info": {
+							"lcltime": "08:08:13",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 39.1631221,
+							"longitude": -77.3580801,
+							"ias": 209.26,
+							"atvwpt": "YACKK",
+							"altmsl": 4087.3,
+							"tas": 221,
+							"vspd": -90.97
+						}
+					},
+					{
+						"name": "TICON",
+						"info": {
+							"lcltime": "08:12:05",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 38.9067394,
+							"longitude": -77.3573608,
+							"ias": 182.78,
+							"atvwpt": "TICON",
+							"altmsl": 3114.7,
+							"tas": 190,
+							"vspd": -17.68
+						}
+					},
+					{
+						"name": "SKINS",
+						"info": {
+							"lcltime": "08:14:01",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 38.8072363,
+							"longitude": -77.3854027,
+							"ias": 177.83,
+							"atvwpt": "SKINS",
+							"altmsl": 3149.7,
+							"tas": 185,
+							"vspd": 369.21
+						}
+					},
+					{
+						"name": "RW01C",
+						"info": {
+							"lcltime": "08:16:02",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 38.8385691,
+							"longitude": -77.4595761,
+							"ias": 131.72,
+							"atvwpt": "RW01C",
+							"altmsl": 3079.8,
+							"tas": 137,
+							"vspd": -182.48
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "07:05:24",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 40.7231172,
+							"longitude": -73.4050415,
+							"ias": 52.18,
+							"atvwpt": "ARD",
+							"altmsl": 63.9,
+							"tas": 52,
+							"vspd": -25.01
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "08:19:59",
+							"lcldate": "2022-11-28",
+							"utcofst": "-05:00",
+							"latitude": 38.9472783,
+							"longitude": -77.459663,
+							"ias": 51.71,
+							"atvwpt": "RW01C",
+							"altmsl": 285.5,
+							"tas": 51,
+							"vspd": 22.52
+						}
+					}
+				],
+				"originalFilename": "log_221128_065219_KFRG.csv"
+			},
+			{
+				"_id": "dfaf8bfa-0fa6-4c22-9633-8dff05aad87b",
+				"Distance": "0",
+				"AircraftID": "N321FF",
+				"Date": "2022-11-13",
+				"TimeOut": "2022-11-13T21:07:02.000Z",
+				"TimeIn": "2022-11-13T22:37:12.000Z",
+				"From": "KOQU",
+				"To": "KOQU",
+				"Route": "PUT KBAF MINGS RW02 AGACO KLYDE KOQU CONEZ HULEM RW34 ",
+				"TotalTime": 1.5,
+				"DayTakeoffs": 1,
+				"DayLandingsFullStop": 0,
+				"NightTakeoffs": 0,
+				"NightLandingsFullStop": 1,
+				"positionData": [
+					{
+						"name": "PUT",
+						"info": {
+							"lcltime": "12:09:12",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.5949897,
+							"longitude": -71.4130401,
+							"ias": 0,
+							"atvwpt": "PUT",
+							"altmsl": -3,
+							"tas": 0,
+							"vspd": -15.81
+						}
+					},
+					{
+						"name": "KBAF",
+						"info": {
+							"lcltime": "12:22:33",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.9547496,
+							"longitude": -71.8460633,
+							"ias": 190.96,
+							"atvwpt": "KBAF",
+							"altmsl": 4038.1,
+							"tas": 202,
+							"vspd": -36.66
+						}
+					},
+					{
+						"name": "MINGS",
+						"info": {
+							"lcltime": "12:35:47",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 42.219809,
+							"longitude": -72.6915691,
+							"ias": 195.43,
+							"atvwpt": "MINGS",
+							"altmsl": 4055.9,
+							"tas": 205,
+							"vspd": 51.52
+						}
+					},
+					{
+						"name": "RW02",
+						"info": {
+							"lcltime": "12:47:10",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 42.0557495,
+							"longitude": -72.7402841,
+							"ias": 105.02,
+							"atvwpt": "RW02",
+							"altmsl": 2129.4,
+							"tas": 108,
+							"vspd": -605.83
+						}
+					},
+					{
+						"name": "AGACO",
+						"info": {
+							"lcltime": "12:50:27",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 42.1476541,
+							"longitude": -72.718554,
+							"ias": 152.45,
+							"atvwpt": "AGACO",
+							"altmsl": 1236.3,
+							"tas": 153,
+							"vspd": 747.55
+						}
+					},
+					{
+						"name": "KLYDE",
+						"info": {
+							"lcltime": "12:51:13",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 42.1798907,
+							"longitude": -72.710318,
+							"ias": 158.93,
+							"atvwpt": "KLYDE",
+							"altmsl": 2714.9,
+							"tas": 164,
+							"vspd": 1604.95
+						}
+					},
+					{
+						"name": "KOQU",
+						"info": {
+							"lcltime": "13:02:51",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 42.2657228,
+							"longitude": -72.7367478,
+							"ias": 176.25,
+							"atvwpt": "KOQU",
+							"altmsl": 4015.9,
+							"tas": 185,
+							"vspd": 234.64
+						}
+					},
+					{
+						"name": "CONEZ",
+						"info": {
+							"lcltime": "13:26:19",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.4737813,
+							"longitude": -71.4036346,
+							"ias": 171.9,
+							"atvwpt": "CONEZ",
+							"altmsl": 2998.4,
+							"tas": 179,
+							"vspd": 8.18
+						}
+					},
+					{
+						"name": "HULEM",
+						"info": {
+							"lcltime": "13:31:19",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.5302875,
+							"longitude": -71.3493506,
+							"ias": 114.34,
+							"atvwpt": "HULEM",
+							"altmsl": 1526.5,
+							"tas": 116,
+							"vspd": -549.35
+						}
+					},
+					{
+						"name": "RW34",
+						"info": {
+							"lcltime": "13:32:55",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.5621928,
+							"longitude": -71.3788343,
+							"ias": 97.9,
+							"atvwpt": "RW34",
+							"altmsl": 786.6,
+							"tas": 98,
+							"vspd": -408.77
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "12:13:23",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.5909155,
+							"longitude": -71.4059855,
+							"ias": 53.09,
+							"atvwpt": "PUT",
+							"altmsl": 9.3,
+							"tas": 53,
+							"vspd": 14.95
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "13:34:46",
+							"lcldate": "2022-11-13",
+							"utcofst": "-04:00",
+							"latitude": 41.5944863,
+							"longitude": -71.4093125,
+							"ias": 52.21,
+							"atvwpt": "RW34",
+							"altmsl": 8.7,
+							"tas": 52,
+							"vspd": 166.94
+						}
+					}
+				],
+				"originalFilename": "log_221113_120607_KOQU.csv"
+			},
+			{
+				"_id": "8c6d9d41-1370-4145-bc21-2974832cbe86",
+				"Distance": "828",
+				"AircraftID": "N321FF",
+				"Date": "2022-11-03",
+				"TimeOut": "2022-11-03T18:03:55.000Z",
+				"TimeIn": "2022-11-03T21:23:08.000Z",
+				"From": "KFRG",
+				"To": "KORL",
+				"Route": "WAVEY EMJAY YAZUU ZIZZI WARNN SWL ISO BARTL JMACK CHS JEVED LPERD JAGGZ WEEEK TTHOR OWEDN THANO RAGNR LOKII MUNKZ DNMOR RW07 ",
+				"TotalTime": 3.3,
+				"DayTakeoffs": 1,
+				"DayLandingsFullStop": 1,
+				"NightTakeoffs": 0,
+				"NightLandingsFullStop": 0,
+				"positionData": [
+					{
+						"name": "WAVEY",
+						"info": {
+							"lcltime": "10:06:55",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 40.7210579,
+							"longitude": -73.4161682,
+							"ias": 0,
+							"atvwpt": "WAVEY",
+							"altmsl": 61.3,
+							"tas": 0,
+							"vspd": 0.32
+						}
+					},
+					{
+						"name": "EMJAY",
+						"info": {
+							"lcltime": "10:24:17",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 40.2329649,
+							"longitude": -73.3964469,
+							"ias": 171.94,
+							"atvwpt": "EMJAY",
+							"altmsl": 10197.2,
+							"tas": 200,
+							"vspd": 293.25
+						}
+					},
+					{
+						"name": "YAZUU",
+						"info": {
+							"lcltime": "10:26:53",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 40.0624776,
+							"longitude": -73.4032377,
+							"ias": 191.04,
+							"atvwpt": "YAZUU",
+							"altmsl": 10757.1,
+							"tas": 225,
+							"vspd": 1455.11
+						}
+					},
+					{
+						"name": "ZIZZI",
+						"info": {
+							"lcltime": "10:40:16",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 39.411783,
+							"longitude": -74.0205282,
+							"ias": 194.24,
+							"atvwpt": "ZIZZI",
+							"altmsl": 24082.2,
+							"tas": 279,
+							"vspd": -27.84
+						}
+					},
+					{
+						"name": "WARNN",
+						"info": {
+							"lcltime": "10:48:18",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 38.9404587,
+							"longitude": -74.5308067,
+							"ias": 187.31,
+							"atvwpt": "WARNN",
+							"altmsl": 27156.6,
+							"tas": 282,
+							"vspd": 38.25
+						}
+					},
+					{
+						"name": "SWL",
+						"info": {
+							"lcltime": "10:51:19",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 38.7494207,
+							"longitude": -74.7349405,
+							"ias": 191.75,
+							"atvwpt": "SWL",
+							"altmsl": 27158,
+							"tas": 289,
+							"vspd": 65.38
+						}
+					},
+					{
+						"name": "ISO",
+						"info": {
+							"lcltime": "10:56:03",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 38.44916,
+							"longitude": -75.0538156,
+							"ias": 190.03,
+							"atvwpt": "ISO",
+							"altmsl": 27146.3,
+							"tas": 286,
+							"vspd": -41.27
+						}
+					},
+					{
+						"name": "BARTL",
+						"info": {
+							"lcltime": "11:40:34",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 35.3698424,
+							"longitude": -77.5619787,
+							"ias": 191.23,
+							"atvwpt": "BARTL",
+							"altmsl": 27125,
+							"tas": 288,
+							"vspd": 44.11
+						}
+					},
+					{
+						"name": "JMACK",
+						"info": {
+							"lcltime": "11:57:14",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 34.3022767,
+							"longitude": -78.6537404,
+							"ias": 191.73,
+							"atvwpt": "JMACK",
+							"altmsl": 27162.3,
+							"tas": 290,
+							"vspd": 45.17
+						}
+					},
+					{
+						"name": "CHS",
+						"info": {
+							"lcltime": "12:01:55",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 33.9874789,
+							"longitude": -78.9688845,
+							"ias": 191.65,
+							"atvwpt": "CHS",
+							"altmsl": 27197,
+							"tas": 290,
+							"vspd": 1.68
+						}
+					},
+					{
+						"name": "JEVED",
+						"info": {
+							"lcltime": "12:03:24",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 33.8874003,
+							"longitude": -79.0682803,
+							"ias": 190.25,
+							"atvwpt": "JEVED",
+							"altmsl": 27198.3,
+							"tas": 288,
+							"vspd": -63.96
+						}
+					},
+					{
+						"name": "LPERD",
+						"info": {
+							"lcltime": "12:38:35",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 31.2489816,
+							"longitude": -81.0602255,
+							"ias": 186.59,
+							"atvwpt": "LPERD",
+							"altmsl": 27555.2,
+							"tas": 286,
+							"vspd": -40.95
+						}
+					},
+					{
+						"name": "JAGGZ",
+						"info": {
+							"lcltime": "12:46:02",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 30.6001651,
+							"longitude": -81.2790893,
+							"ias": 185.8,
+							"atvwpt": "JAGGZ",
+							"altmsl": 27618.3,
+							"tas": 285,
+							"vspd": -0.57
+						}
+					},
+					{
+						"name": "WEEEK",
+						"info": {
+							"lcltime": "12:49:29",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 30.2718386,
+							"longitude": -81.2651206,
+							"ias": 206.25,
+							"atvwpt": "WEEEK",
+							"altmsl": 25615.2,
+							"tas": 305,
+							"vspd": -1201.98
+						}
+					},
+					{
+						"name": "TTHOR",
+						"info": {
+							"lcltime": "12:53:28",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 29.9202543,
+							"longitude": -81.2434564,
+							"ias": 202.57,
+							"atvwpt": "TTHOR",
+							"altmsl": 16713.3,
+							"tas": 262,
+							"vspd": -436.69
+						}
+					},
+					{
+						"name": "OWEDN",
+						"info": {
+							"lcltime": "12:56:31",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 29.6626967,
+							"longitude": -81.2342301,
+							"ias": 223.41,
+							"atvwpt": "OWEDN",
+							"altmsl": 12593.3,
+							"tas": 271,
+							"vspd": -917.61
+						}
+					},
+					{
+						"name": "THANO",
+						"info": {
+							"lcltime": "13:00:18",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 29.3685736,
+							"longitude": -81.2178014,
+							"ias": 215.23,
+							"atvwpt": "THANO",
+							"altmsl": 9070.3,
+							"tas": 248,
+							"vspd": -786.69
+						}
+					},
+					{
+						"name": "RAGNR",
+						"info": {
+							"lcltime": "13:01:58",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 29.2471701,
+							"longitude": -81.2127016,
+							"ias": 211.36,
+							"atvwpt": "RAGNR",
+							"altmsl": 7645.7,
+							"tas": 237,
+							"vspd": -793.48
+						}
+					},
+					{
+						"name": "LOKII",
+						"info": {
+							"lcltime": "13:03:53",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 29.1183453,
+							"longitude": -81.2037815,
+							"ias": 202.06,
+							"atvwpt": "LOKII",
+							"altmsl": 7336.8,
+							"tas": 226,
+							"vspd": 30.96
+						}
+					},
+					{
+						"name": "MUNKZ",
+						"info": {
+							"lcltime": "13:05:20",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 29.0252083,
+							"longitude": -81.2043963,
+							"ias": 200.48,
+							"atvwpt": "MUNKZ",
+							"altmsl": 5195.9,
+							"tas": 217,
+							"vspd": -1835.98
+						}
+					},
+					{
+						"name": "DNMOR",
+						"info": {
+							"lcltime": "13:12:15",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 28.6852691,
+							"longitude": -81.5119,
+							"ias": 202.39,
+							"atvwpt": "DNMOR",
+							"altmsl": 4183.5,
+							"tas": 217,
+							"vspd": -350.38
+						}
+					},
+					{
+						"name": "RW07",
+						"info": {
+							"lcltime": "13:17:21",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 28.5189433,
+							"longitude": -81.4009081,
+							"ias": 105.56,
+							"atvwpt": "RW07",
+							"altmsl": 1523.6,
+							"tas": 109,
+							"vspd": -284.62
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "10:11:15",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 40.7247834,
+							"longitude": -73.4143145,
+							"ias": 51.5,
+							"atvwpt": "WAVEY",
+							"altmsl": 66.9,
+							"tas": 51,
+							"vspd": 41.81
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "13:20:03",
+							"lcldate": "2022-11-03",
+							"utcofst": "-04:00",
+							"latitude": 28.5446678,
+							"longitude": -81.3344684,
+							"ias": 52.1,
+							"atvwpt": "RW07",
+							"altmsl": 106.8,
+							"tas": 53,
+							"vspd": 245.49
+						}
+					}
+				],
+				"originalFilename": "log_221103_100251_KFRG.csv"
+			},
+			{
+				"_id": "0b68b387-4c94-467e-8183-092cb996c34e",
+				"Distance": "828",
+				"AircraftID": "N321FF",
+				"Date": "2022-11-07",
+				"TimeOut": "2022-11-07T19:57:03.000Z",
+				"TimeIn": "2022-11-07T23:32:21.000Z",
+				"From": "KORL",
+				"To": "KFRG",
+				"Route": "620� NYTES Vectors WORMS GUANO BKENI VIYAP BARTL ISO WEAVR ORF SAWED KALDA DUNFE SWL CBEAV RADDS SEWEL HOGGS HOGGS-1 PANZE FALON ZIGGI-1 ZIGGI KFRG RW32 ",
+				"TotalTime": 3.6,
+				"DayTakeoffs": 1,
+				"DayLandingsFullStop": 0,
+				"NightTakeoffs": 0,
+				"NightLandingsFullStop": 1,
+				"positionData": [
+					{
+						"name": "620�",
+						"info": {
+							"lcltime": "10:59:32",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 28.5478057,
+							"longitude": -81.337593,
+							"ias": 0,
+							"atvwpt": "620�",
+							"altmsl": 93.1,
+							"tas": 0,
+							"vspd": 24.74
+						}
+					},
+					{
+						"name": "NYTES",
+						"info": {
+							"lcltime": "11:08:04",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 28.5533773,
+							"longitude": -81.309901,
+							"ias": 151.23,
+							"atvwpt": "NYTES",
+							"altmsl": 693.4,
+							"tas": 155,
+							"vspd": 1192.71
+						}
+					},
+					{
+						"name": "Vectors",
+						"info": {
+							"lcltime": "11:10:34",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 28.6415478,
+							"longitude": -81.2543389,
+							"ias": 175.86,
+							"atvwpt": "Vectors",
+							"altmsl": 3657,
+							"tas": 187,
+							"vspd": 1259.97
+						}
+					},
+					{
+						"name": "WORMS",
+						"info": {
+							"lcltime": "11:11:04",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 28.666801,
+							"longitude": -81.2597793,
+							"ias": 180.7,
+							"atvwpt": "WORMS",
+							"altmsl": 4409.4,
+							"tas": 194,
+							"vspd": 2318.36
+						}
+					},
+					{
+						"name": "GUANO",
+						"info": {
+							"lcltime": "11:18:10",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 29.0140856,
+							"longitude": -81.379364,
+							"ias": 203.45,
+							"atvwpt": "GUANO",
+							"altmsl": 12605.7,
+							"tas": 249,
+							"vspd": -438.99
+						}
+					},
+					{
+						"name": "BKENI",
+						"info": {
+							"lcltime": "11:19:30",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 29.1004638,
+							"longitude": -81.3873859,
+							"ias": 175.04,
+							"atvwpt": "BKENI",
+							"altmsl": 13869.5,
+							"tas": 219,
+							"vspd": 1268.91
+						}
+					},
+					{
+						"name": "VIYAP",
+						"info": {
+							"lcltime": "11:29:16",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 29.6386805,
+							"longitude": -81.3449773,
+							"ias": 140.82,
+							"atvwpt": "VIYAP",
+							"altmsl": 27053.7,
+							"tas": 216,
+							"vspd": 966.51
+						}
+					},
+					{
+						"name": "BARTL",
+						"info": {
+							"lcltime": "11:45:26",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 30.8710511,
+							"longitude": -81.41336,
+							"ias": 180.14,
+							"atvwpt": "BARTL",
+							"altmsl": 28732,
+							"tas": 280,
+							"vspd": -64.56
+						}
+					},
+					{
+						"name": "ISO",
+						"info": {
+							"lcltime": "12:41:33",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 34.3039498,
+							"longitude": -78.6495862,
+							"ias": 182.41,
+							"atvwpt": "ISO",
+							"altmsl": 28734.7,
+							"tas": 284,
+							"vspd": -85.33
+						}
+					},
+					{
+						"name": "WEAVR",
+						"info": {
+							"lcltime": "13:00:11",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 35.3713881,
+							"longitude": -77.5564572,
+							"ias": 181.28,
+							"atvwpt": "WEAVR",
+							"altmsl": 28731.1,
+							"tas": 282,
+							"vspd": -58.34
+						}
+					},
+					{
+						"name": "ORF",
+						"info": {
+							"lcltime": "13:08:03",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 35.8537152,
+							"longitude": -77.1331483,
+							"ias": 181.44,
+							"atvwpt": "ORF",
+							"altmsl": 28725.1,
+							"tas": 283,
+							"vspd": 79.92
+						}
+					},
+					{
+						"name": "SAWED",
+						"info": {
+							"lcltime": "13:24:55",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 36.8924093,
+							"longitude": -76.1998407,
+							"ias": 180.42,
+							"atvwpt": "SAWED",
+							"altmsl": 28749.7,
+							"tas": 281,
+							"vspd": 349.56
+						}
+					},
+					{
+						"name": "KALDA",
+						"info": {
+							"lcltime": "13:34:04",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 37.5343423,
+							"longitude": -75.8557816,
+							"ias": 182.05,
+							"atvwpt": "KALDA",
+							"altmsl": 28678.5,
+							"tas": 283,
+							"vspd": -287.85
+						}
+					},
+					{
+						"name": "DUNFE",
+						"info": {
+							"lcltime": "13:38:38",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 37.8422449,
+							"longitude": -75.6249921,
+							"ias": 182.21,
+							"atvwpt": "DUNFE",
+							"altmsl": 28692.2,
+							"tas": 284,
+							"vspd": 52.64
+						}
+					},
+					{
+						"name": "SWL",
+						"info": {
+							"lcltime": "13:39:19",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 37.888748,
+							"longitude": -75.5900666,
+							"ias": 182.33,
+							"atvwpt": "SWL",
+							"altmsl": 28684.8,
+							"tas": 284,
+							"vspd": -106.52
+						}
+					},
+					{
+						"name": "CBEAV",
+						"info": {
+							"lcltime": "13:41:48",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 38.0575819,
+							"longitude": -75.4619036,
+							"ias": 182.01,
+							"atvwpt": "CBEAV",
+							"altmsl": 28688,
+							"tas": 283,
+							"vspd": 98.74
+						}
+					},
+					{
+						"name": "RADDS",
+						"info": {
+							"lcltime": "13:46:09",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 38.3720658,
+							"longitude": -75.2631454,
+							"ias": 207.8,
+							"atvwpt": "RADDS",
+							"altmsl": 26776.2,
+							"tas": 312,
+							"vspd": -1361.14
+						}
+					},
+					{
+						"name": "SEWEL",
+						"info": {
+							"lcltime": "13:49:35",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 38.6490784,
+							"longitude": -75.0873013,
+							"ias": 220.4,
+							"atvwpt": "SEWEL",
+							"altmsl": 21593.2,
+							"tas": 306,
+							"vspd": -1453.17
+						}
+					},
+					{
+						"name": "HOGGS",
+						"info": {
+							"lcltime": "13:51:05",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 38.7707437,
+							"longitude": -75.0099904,
+							"ias": 226.1,
+							"atvwpt": "HOGGS",
+							"altmsl": 19512.7,
+							"tas": 304,
+							"vspd": -1204.06
+						}
+					},
+					{
+						"name": "HOGGS-1",
+						"info": {
+							"lcltime": "13:51:19",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 38.7885817,
+							"longitude": -74.9967166,
+							"ias": 225.25,
+							"atvwpt": "HOGGS-1",
+							"altmsl": 19205.1,
+							"tas": 301,
+							"vspd": -1194.03
+						}
+					},
+					{
+						"name": "PANZE",
+						"info": {
+							"lcltime": "14:03:31",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 39.5830879,
+							"longitude": -74.2684708,
+							"ias": 215.38,
+							"atvwpt": "PANZE",
+							"altmsl": 15681.3,
+							"tas": 274,
+							"vspd": -36.54
+						}
+					},
+					{
+						"name": "FALON",
+						"info": {
+							"lcltime": "14:05:02",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 39.6772522,
+							"longitude": -74.1695503,
+							"ias": 204.01,
+							"atvwpt": "FALON",
+							"altmsl": 15514.6,
+							"tas": 259,
+							"vspd": -843.84
+						}
+					},
+					{
+						"name": "ZIGGI-1",
+						"info": {
+							"lcltime": "14:06:53",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 39.8170547,
+							"longitude": -74.1087551,
+							"ias": 225.91,
+							"atvwpt": "ZIGGI-1",
+							"altmsl": 12663.6,
+							"tas": 274,
+							"vspd": -1354.3
+						}
+					},
+					{
+						"name": "ZIGGI",
+						"info": {
+							"lcltime": "14:09:52",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 40.0370941,
+							"longitude": -74.0178903,
+							"ias": 198.95,
+							"atvwpt": "ZIGGI",
+							"altmsl": 8325.8,
+							"tas": 226,
+							"vspd": -587.65
+						}
+					},
+					{
+						"name": "KFRG",
+						"info": {
+							"lcltime": "14:10:06",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 40.0510212,
+							"longitude": -74.0098607,
+							"ias": 186.78,
+							"atvwpt": "KFRG",
+							"altmsl": 8272.8,
+							"tas": 213,
+							"vspd": -121.46
+						}
+					},
+					{
+						"name": "RW32",
+						"info": {
+							"lcltime": "14:10:27",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 40.0633662,
+							"longitude": -73.9864489,
+							"ias": 168.67,
+							"atvwpt": "RW32",
+							"altmsl": 8333.8,
+							"tas": 193,
+							"vspd": 318.85
+						}
+					},
+					{
+						"name": "flightOff",
+						"info": {
+							"lcltime": "11:07:12",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 28.5434196,
+							"longitude": -81.3377334,
+							"ias": 52.02,
+							"atvwpt": "620�",
+							"altmsl": 104.4,
+							"tas": 53,
+							"vspd": -28.79
+						}
+					},
+					{
+						"name": "flightOn",
+						"info": {
+							"lcltime": "14:28:34",
+							"lcldate": "2022-11-07",
+							"utcofst": "-04:00",
+							"latitude": 40.7267751,
+							"longitude": -73.4104311,
+							"ias": 50.3,
+							"atvwpt": "RW32",
+							"altmsl": 64.4,
+							"tas": 51,
+							"vspd": 207.8
+						}
+					}
+				],
+				"originalFilename": "log_221107_105606_KORL.csv"
+			}
+		],
+		"aircraftCsv": "",
+		"incoming": ""
+	},
+	"authPinia": {
+		"session": {
+			"provider_token": null,
+			"provider_refresh_token": null,
+			"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNjc0NDk5ODkwLCJzdWIiOiIzY2YxNDE0Mi0yNDc0LTQ4OGQtODczMi0yMGZhOTJjOGMxNzYiLCJlbWFpbCI6ImZldy10ZWFjaGVyQGw2c21xZm5vLm1haWxvc2F1ci5uZXQiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7fSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJvdHAiLCJ0aW1lc3RhbXAiOjE2NzQ0OTYyOTB9XSwic2Vzc2lvbl9pZCI6IjgzNjJhMDQxLTRmMzktNGNkYi1iNTY1LTljMGNlYjcyMTc1OSJ9.ZemTpXUJWYFHNrwsXvagn_cNq2lHQG4553dxDWiXAK4",
+			"expires_in": 3600,
+			"expires_at": 1674499891,
+			"refresh_token": "lMGdiFeieS2UBWd1_E2PlA",
+			"token_type": "bearer",
+			"user": {
+				"id": "3cf14142-2474-488d-8732-20fa92c8c176",
+				"aud": "authenticated",
+				"role": "authenticated",
+				"email": "few-teacher@l6smqfno.mailosaur.net",
+				"email_confirmed_at": "2023-01-23T17:51:30.388089Z",
+				"phone": "",
+				"confirmation_sent_at": "2023-01-23T17:50:44.786633Z",
+				"confirmed_at": "2023-01-23T17:51:30.388089Z",
+				"last_sign_in_at": "2023-01-23T17:51:30.38896Z",
+				"app_metadata": { "provider": "email", "providers": ["email"] },
+				"user_metadata": {},
+				"identities": [
+					{
+						"id": "3cf14142-2474-488d-8732-20fa92c8c176",
+						"user_id": "3cf14142-2474-488d-8732-20fa92c8c176",
+						"identity_data": {
+							"email": "few-teacher@l6smqfno.mailosaur.net",
+							"sub": "3cf14142-2474-488d-8732-20fa92c8c176"
+						},
+						"provider": "email",
+						"last_sign_in_at": "2023-01-23T17:50:44.784623Z",
+						"created_at": "2023-01-23T17:50:44.784656Z",
+						"updated_at": "2023-01-23T17:50:44.784656Z"
+					}
+				],
+				"created_at": "2023-01-23T17:50:44.781873Z",
+				"updated_at": "2023-01-23T17:51:30.391494Z"
+			}
+		}
+	}
+}

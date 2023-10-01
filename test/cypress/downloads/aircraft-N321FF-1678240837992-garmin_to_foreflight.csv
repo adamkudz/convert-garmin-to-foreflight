@@ -1,0 +1,2 @@
+AircraftId,EquipmentType,TypeCode,Make,Model,Category,Class,GearType,EngineType,Complex,TAA,HighPerformance,Pressurized
+N321FF,Aircraft,TBM8,Socata,TBM 850,airplane,airplane_single_engine_land,retractable_tricycle,Turboprop,1,1,1,1

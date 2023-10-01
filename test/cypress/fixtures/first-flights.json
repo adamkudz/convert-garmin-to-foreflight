@@ -1,0 +1,1180 @@
+{
+	"logbookEntries": [
+		{
+			"_id": "29bf46dc-d201-4f74-a9fc-0d1dd021c04e",
+			"Distance": "246",
+			"AircraftID": "N321FF",
+			"Date": "2021-01-08",
+			"TimeOut": "2021-01-08T20:28:31.000Z",
+			"TimeIn": "2021-01-08T21:52:02.000Z",
+			"From": "KMMU",
+			"To": "KCHO",
+			"Route": "LANNA MANSEQ HAAGN GVE KCHO SIPME JITIV RW03 ",
+			"TotalTime": 1.4,
+			"DayTakeoffs": 1,
+			"DayLandingsFullStop": 0,
+			"NightTakeoffs": 0,
+			"NightLandingsFullStop": 1,
+			"positionData": [
+				{
+					"name": "LANNA",
+					"info": {
+						"lcltime": "09:34:44",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 40.799015,
+						"longitude": -74.4233932,
+						"ias": 0,
+						"e1ng": 70.83,
+						"atvwpt": "LANNA",
+						"altind": 224.6,
+						"altmsl": 263,
+						"tas": 0,
+						"vspd": -20.97
+					}
+				},
+				{
+					"name": "MANSEQ",
+					"info": {
+						"lcltime": "09:40:41",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 40.8258247,
+						"longitude": -74.3640747,
+						"ias": 135.8,
+						"e1ng": 95.04,
+						"atvwpt": "MANSEQ",
+						"altind": 2590.6,
+						"altmsl": 2471,
+						"tas": 144,
+						"vspd": 1656.37
+					}
+				},
+				{
+					"name": "HAAGN",
+					"info": {
+						"lcltime": "09:53:17",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 40.5594063,
+						"longitude": -75.0274582,
+						"ias": 167.44,
+						"e1ng": 99.13,
+						"atvwpt": "HAAGN",
+						"altind": 24016,
+						"altmsl": 23915.9,
+						"tas": 251,
+						"vspd": -47.18
+					}
+				},
+				{
+					"name": "GVE",
+					"info": {
+						"lcltime": "10:03:46",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 40.068882,
+						"longitude": -75.890892,
+						"ias": 208.36,
+						"e1ng": 95.51,
+						"atvwpt": "GVE",
+						"altind": 19997,
+						"altmsl": 19849.3,
+						"tas": 292,
+						"vspd": -33.38
+					}
+				},
+				{
+					"name": "KCHO",
+					"info": {
+						"lcltime": "10:29:51",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 38.5723915,
+						"longitude": -77.5566635,
+						"ias": 232.97,
+						"e1ng": 94.48,
+						"atvwpt": "KCHO",
+						"altind": 12513.9,
+						"altmsl": 12221.6,
+						"tas": 288,
+						"vspd": -1501.85
+					}
+				},
+				{
+					"name": "SIPME",
+					"info": {
+						"lcltime": "10:38:25",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 38.2286034,
+						"longitude": -78.1979218,
+						"ias": 232.7,
+						"e1ng": 94.01,
+						"atvwpt": "SIPME",
+						"altind": 9682.9,
+						"altmsl": 9394.1,
+						"tas": 275,
+						"vspd": -1502.21
+					}
+				},
+				{
+					"name": "JITIV",
+					"info": {
+						"lcltime": "10:40:41",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 38.0964012,
+						"longitude": -78.3096466,
+						"ias": 204.94,
+						"e1ng": 83.67,
+						"atvwpt": "JITIV",
+						"altind": 5927.9,
+						"altmsl": 5686,
+						"tas": 229,
+						"vspd": -2007.57
+					}
+				},
+				{
+					"name": "RW03",
+					"info": {
+						"lcltime": "10:45:25",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 38.0928078,
+						"longitude": -78.4763718,
+						"ias": 91.56,
+						"e1ng": 82.89,
+						"atvwpt": "RW03",
+						"altind": 1608.9,
+						"altmsl": 1524.3,
+						"tas": 95,
+						"vspd": -661.69
+					}
+				},
+				{
+					"name": "flightOff",
+					"info": {
+						"lcltime": "09:39:01",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 40.7947617,
+						"longitude": -74.4176483,
+						"ias": 53.86,
+						"e1ng": 94.19,
+						"atvwpt": "1700�",
+						"altind": 233.6,
+						"altmsl": 187.3,
+						"tas": 54,
+						"vspd": 86.52
+					}
+				},
+				{
+					"name": "flightOn",
+					"info": {
+						"lcltime": "10:47:28",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 38.137146,
+						"longitude": -78.4536438,
+						"ias": 50.59,
+						"e1ng": 71.6,
+						"atvwpt": "RW03",
+						"altind": 659.9,
+						"altmsl": 637.8,
+						"tas": 51,
+						"vspd": 77.29
+					}
+				}
+			],
+			"originalFilename": "log_210108_092831_KMMU.csv"
+		},
+		{
+			"_id": "5ecac514-6c8c-4861-98ab-95ee445b038d",
+			"Distance": "246",
+			"AircraftID": "N321FF",
+			"Date": "2021-01-08",
+			"TimeOut": "2021-01-09T01:45:26.000Z",
+			"TimeIn": "2021-01-09T03:22:34.000Z",
+			"From": "KCHO",
+			"To": "KMMU",
+			"Route": "GVE WITTO LURAY SCAPE KABE KMMU HOSBE RW05 ",
+			"TotalTime": 1.6,
+			"DayTakeoffs": 0,
+			"DayLandingsFullStop": 0,
+			"NightTakeoffs": 1,
+			"NightLandingsFullStop": 1,
+			"positionData": [
+				{
+					"name": "GVE",
+					"info": {
+						"lcltime": "14:58:30",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 38.1369858,
+						"longitude": -78.4513474,
+						"ias": 0,
+						"e1ng": 70.58,
+						"atvwpt": "GVE",
+						"altind": 617.1,
+						"altmsl": 619.8,
+						"tas": 0,
+						"vspd": 0.55
+					}
+				},
+				{
+					"name": "WITTO",
+					"info": {
+						"lcltime": "15:10:13",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 38.0739899,
+						"longitude": -78.2157745,
+						"ias": 136.76,
+						"e1ng": 94.54,
+						"atvwpt": "WITTO",
+						"altind": 13007.1,
+						"altmsl": 12819.7,
+						"tas": 173,
+						"vspd": 1670.34
+					}
+				},
+				{
+					"name": "LURAY",
+					"info": {
+						"lcltime": "15:15:20",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 38.3373222,
+						"longitude": -78.380928,
+						"ias": 207.91,
+						"e1ng": 95.6,
+						"atvwpt": "LURAY",
+						"altind": 19006,
+						"altmsl": 18712.3,
+						"tas": 285,
+						"vspd": -42.1
+					}
+				},
+				{
+					"name": "SCAPE",
+					"info": {
+						"lcltime": "15:16:46",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 38.4388313,
+						"longitude": -78.4528275,
+						"ias": 212.5,
+						"e1ng": 95.18,
+						"atvwpt": "SCAPE",
+						"altind": 19000,
+						"altmsl": 18704.3,
+						"tas": 291,
+						"vspd": -29.84
+					}
+				},
+				{
+					"name": "KABE",
+					"info": {
+						"lcltime": "15:35:04",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 39.7479324,
+						"longitude": -77.6637268,
+						"ias": 212.73,
+						"e1ng": 95.05,
+						"atvwpt": "KABE",
+						"altind": 19003,
+						"altmsl": 18706.7,
+						"tas": 291,
+						"vspd": 24.23
+					}
+				},
+				{
+					"name": "KMMU",
+					"info": {
+						"lcltime": "15:42:40",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 40.0108795,
+						"longitude": -77.0189819,
+						"ias": 216.72,
+						"e1ng": 94.33,
+						"atvwpt": "KMMU",
+						"altind": 10731.3,
+						"altmsl": 10491.1,
+						"tas": 261,
+						"vspd": -615.11
+					}
+				},
+				{
+					"name": "HOSBE",
+					"info": {
+						"lcltime": "16:08:10",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 40.6572495,
+						"longitude": -74.8121109,
+						"ias": 235.7,
+						"e1ng": 93.1,
+						"atvwpt": "HOSBE",
+						"altind": 5170.1,
+						"altmsl": 4947.1,
+						"tas": 260,
+						"vspd": -1392.71
+					}
+				},
+				{
+					"name": "RW05",
+					"info": {
+						"lcltime": "16:13:06",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 40.7366753,
+						"longitude": -74.4733734,
+						"ias": 124.17,
+						"e1ng": 83.38,
+						"atvwpt": "RW05",
+						"altind": 1782.1,
+						"altmsl": 1684.8,
+						"tas": 130,
+						"vspd": 39.81
+					}
+				},
+				{
+					"name": "flightOff",
+					"info": {
+						"lcltime": "15:03:53",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 38.1326065,
+						"longitude": -78.455986,
+						"ias": 50.35,
+						"e1ng": 93.42,
+						"atvwpt": "GVE",
+						"altind": 651.1,
+						"altmsl": 639.6,
+						"tas": 51,
+						"vspd": 48.49
+					}
+				},
+				{
+					"name": "flightOn",
+					"info": {
+						"lcltime": "16:16:22",
+						"lcldate": "2021-01-08",
+						"utcofst": "-06:00",
+						"latitude": 40.7982941,
+						"longitude": -74.4142914,
+						"ias": 52.14,
+						"e1ng": 71.8,
+						"atvwpt": "RW05",
+						"altind": 197.1,
+						"altmsl": 186.9,
+						"tas": 52,
+						"vspd": 134.94
+					}
+				}
+			],
+			"originalFilename": "log_210108_144525_KCHO.csv"
+		},
+		{
+			"_id": "e92e4a09-3dd1-42fc-a63a-388af50770df",
+			"Distance": "679",
+			"AircraftID": "N321FF",
+			"Date": "2021-01-02",
+			"TimeOut": "2021-01-03T07:37:02.000Z",
+			"TimeIn": "2021-01-03T10:23:45.000Z",
+			"From": "KMSN",
+			"To": "KMMU",
+			"Route": "BAE ADALE DAFLU STENT LVZ HARTY MUGZY BADDA BINGG RW23 ",
+			"TotalTime": 2.8,
+			"DayTakeoffs": 0,
+			"DayLandingsFullStop": 0,
+			"NightTakeoffs": 1,
+			"NightLandingsFullStop": 1,
+			"positionData": [
+				{
+					"name": "BAE",
+					"info": {
+						"lcltime": "20:43:14",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 43.1398964,
+						"longitude": -89.3269043,
+						"ias": 0,
+						"e1ng": 70.69,
+						"atvwpt": "BAE",
+						"altind": 775,
+						"altmsl": 864.1,
+						"tas": 0,
+						"vspd": -10.57
+					}
+				},
+				{
+					"name": "ADALE",
+					"info": {
+						"lcltime": "21:10:39",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 43.1165047,
+						"longitude": -88.2830887,
+						"ias": 142.72,
+						"e1ng": 100.66,
+						"atvwpt": "ADALE",
+						"altind": 27010,
+						"altmsl": 26841.6,
+						"tas": 224,
+						"vspd": -32.8
+					}
+				},
+				{
+					"name": "DAFLU",
+					"info": {
+						"lcltime": "21:24:01",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 42.9608459,
+						"longitude": -86.8923111,
+						"ias": 201.17,
+						"e1ng": 101.2,
+						"atvwpt": "DAFLU",
+						"altind": 29005,
+						"altmsl": 28771,
+						"tas": 322,
+						"vspd": 13.12
+					}
+				},
+				{
+					"name": "STENT",
+					"info": {
+						"lcltime": "21:41:10",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 42.6973419,
+						"longitude": -84.8492126,
+						"ias": 197.42,
+						"e1ng": 100.95,
+						"atvwpt": "STENT",
+						"altind": 29002,
+						"altmsl": 28861.9,
+						"tas": 318,
+						"vspd": 4.68
+					}
+				},
+				{
+					"name": "LVZ",
+					"info": {
+						"lcltime": "22:45:28",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 41.6781235,
+						"longitude": -77.1509323,
+						"ias": 206.91,
+						"e1ng": 97.22,
+						"atvwpt": "LVZ",
+						"altind": 22001,
+						"altmsl": 22260.4,
+						"tas": 301,
+						"vspd": -6.86
+					}
+				},
+				{
+					"name": "HARTY",
+					"info": {
+						"lcltime": "22:57:48",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 41.2722893,
+						"longitude": -75.6876526,
+						"ias": 231.33,
+						"e1ng": 94.76,
+						"atvwpt": "HARTY",
+						"altind": 18146,
+						"altmsl": 18351.6,
+						"tas": 316,
+						"vspd": -1188.35
+					}
+				},
+				{
+					"name": "MUGZY",
+					"info": {
+						"lcltime": "23:03:42",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 41.070713,
+						"longitude": -75.0885239,
+						"ias": 193.89,
+						"e1ng": 88.83,
+						"atvwpt": "MUGZY",
+						"altind": 7910.5,
+						"altmsl": 7716,
+						"tas": 226,
+						"vspd": -1251.14
+					}
+				},
+				{
+					"name": "BADDA",
+					"info": {
+						"lcltime": "23:04:52",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 41.0397377,
+						"longitude": -74.997818,
+						"ias": 206.79,
+						"e1ng": 89.16,
+						"atvwpt": "BADDA",
+						"altind": 6449.5,
+						"altmsl": 6239.6,
+						"tas": 234,
+						"vspd": -1299.81
+					}
+				},
+				{
+					"name": "BINGG",
+					"info": {
+						"lcltime": "23:06:12",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 41.0277977,
+						"longitude": -74.8924179,
+						"ias": 197.6,
+						"e1ng": 93.15,
+						"atvwpt": "BINGG",
+						"altind": 5999.5,
+						"altmsl": 5809,
+						"tas": 221,
+						"vspd": 2.45
+					}
+				},
+				{
+					"name": "RW23",
+					"info": {
+						"lcltime": "23:15:43",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 40.8811302,
+						"longitude": -74.3355865,
+						"ias": 155.23,
+						"e1ng": 88.18,
+						"atvwpt": "RW23",
+						"altind": 1993.5,
+						"altmsl": 1886.7,
+						"tas": 162,
+						"vspd": -82.27
+					}
+				},
+				{
+					"name": "flightOff",
+					"info": {
+						"lcltime": "20:51:31",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 43.1488991,
+						"longitude": -89.3299713,
+						"ias": 52.31,
+						"e1ng": 93.48,
+						"atvwpt": "BAE",
+						"altind": 810,
+						"altmsl": 886.5,
+						"tas": 52,
+						"vspd": 11.19
+					}
+				},
+				{
+					"name": "flightOn",
+					"info": {
+						"lcltime": "23:18:50",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 40.8023033,
+						"longitude": -74.4104233,
+						"ias": 51.21,
+						"e1ng": 71.58,
+						"atvwpt": "RW23",
+						"altind": 195.5,
+						"altmsl": 187.6,
+						"tas": 51,
+						"vspd": 84.1
+					}
+				}
+			],
+			"originalFilename": "log_210102_203702_KMSN.csv"
+		},
+		{
+			"_id": "ad6b7dec-cfbf-4887-a549-9a6fdd784639",
+			"Distance": "643",
+			"AircraftID": "N321FF",
+			"Date": "2021-01-02",
+			"TimeOut": "2021-01-02T17:35:02.000Z",
+			"TimeIn": "2021-01-02T20:42:57.000Z",
+			"From": "KMMU",
+			"To": "KGRB",
+			"Route": "MANSEQ COATE LAAYK YYOST DGRAF LHY45 KGRB SENNA FRZZN MAZTT RW36 ",
+			"TotalTime": 3.1,
+			"DayTakeoffs": 1,
+			"DayLandingsFullStop": 1,
+			"NightTakeoffs": 0,
+			"NightLandingsFullStop": 0,
+			"positionData": [
+				{
+					"name": "MANSEQ",
+					"info": {
+						"lcltime": "12:42:57",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 40.7702332,
+						"longitude": -74.4295044,
+						"ias": 162.62,
+						"e1ng": 94.99,
+						"atvwpt": "MANSEQ",
+						"altind": 1954.7,
+						"altmsl": 1391.9,
+						"tas": 169,
+						"vspd": 1206.16
+					}
+				},
+				{
+					"name": "COATE",
+					"info": {
+						"lcltime": "12:46:01",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 40.7982788,
+						"longitude": -74.2601929,
+						"ias": 147.38,
+						"e1ng": 94.58,
+						"atvwpt": "COATE",
+						"altind": 6286.7,
+						"altmsl": 5730.6,
+						"tas": 167,
+						"vspd": 1910.4
+					}
+				},
+				{
+					"name": "LAAYK",
+					"info": {
+						"lcltime": "12:56:09",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 41.1363907,
+						"longitude": -74.6961441,
+						"ias": 211.29,
+						"e1ng": 95.38,
+						"atvwpt": "LAAYK",
+						"altind": 13998.8,
+						"altmsl": 13936.2,
+						"tas": 273,
+						"vspd": -19.73
+					}
+				},
+				{
+					"name": "YYOST",
+					"info": {
+						"lcltime": "13:10:09",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 41.4759979,
+						"longitude": -75.4836197,
+						"ias": 205.28,
+						"e1ng": 99.08,
+						"atvwpt": "YYOST",
+						"altind": 24004,
+						"altmsl": 24027.5,
+						"tas": 311,
+						"vspd": -48.06
+					}
+				},
+				{
+					"name": "DGRAF",
+					"info": {
+						"lcltime": "13:15:05",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 41.5830421,
+						"longitude": -75.8564606,
+						"ias": 204.16,
+						"e1ng": 99.04,
+						"atvwpt": "DGRAF",
+						"altind": 24005,
+						"altmsl": 24009.7,
+						"tas": 308,
+						"vspd": 20.39
+					}
+				},
+				{
+					"name": "LHY45",
+					"info": {
+						"lcltime": "13:19:50",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 41.6868172,
+						"longitude": -76.2239456,
+						"ias": 205.56,
+						"e1ng": 99,
+						"atvwpt": "LHY45",
+						"altind": 24003,
+						"altmsl": 24017.6,
+						"tas": 310,
+						"vspd": -17.35
+					}
+				},
+				{
+					"name": "KGRB",
+					"info": {
+						"lcltime": "13:20:03",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 41.6916046,
+						"longitude": -76.2409973,
+						"ias": 206.22,
+						"e1ng": 98.97,
+						"atvwpt": "KGRB",
+						"altind": 24005,
+						"altmsl": 24014.8,
+						"tas": 311,
+						"vspd": -10.1
+					}
+				},
+				{
+					"name": "SENNA",
+					"info": {
+						"lcltime": "15:22:27",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 44.2804489,
+						"longitude": -86.9902344,
+						"ias": 222.5,
+						"e1ng": 95.19,
+						"atvwpt": "SENNA",
+						"altind": 13995.1,
+						"altmsl": 13765.2,
+						"tas": 284,
+						"vspd": 8.97
+					}
+				},
+				{
+					"name": "FRZZN",
+					"info": {
+						"lcltime": "15:33:58",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 44.2855797,
+						"longitude": -88.1167679,
+						"ias": 189.25,
+						"e1ng": 87.66,
+						"atvwpt": "FRZZN",
+						"altind": 3704.1,
+						"altmsl": 3511.9,
+						"tas": 204,
+						"vspd": -1016.73
+					}
+				},
+				{
+					"name": "MAZTT",
+					"info": {
+						"lcltime": "15:36:10",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 44.3943596,
+						"longitude": -88.1334839,
+						"ias": 148.43,
+						"e1ng": 87.79,
+						"atvwpt": "MAZTT",
+						"altind": 2180.1,
+						"altmsl": 2053.7,
+						"tas": 153,
+						"vspd": -130.06
+					}
+				},
+				{
+					"name": "RW36",
+					"info": {
+						"lcltime": "15:37:34",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 44.445118,
+						"longitude": -88.1335678,
+						"ias": 109.83,
+						"e1ng": 84.14,
+						"atvwpt": "RW36",
+						"altind": 1268.1,
+						"altmsl": 1206.2,
+						"tas": 112,
+						"vspd": -657
+					}
+				},
+				{
+					"name": "flightOff",
+					"info": {
+						"lcltime": "12:41:50",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 40.8047333,
+						"longitude": -74.4080887,
+						"ias": 54.91,
+						"e1ng": 94.73,
+						"atvwpt": "600�",
+						"altind": 702.7,
+						"altmsl": 185.3,
+						"tas": 55,
+						"vspd": 58.93
+					}
+				},
+				{
+					"name": "flightOn",
+					"info": {
+						"lcltime": "15:38:50",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 44.4774971,
+						"longitude": -88.1336212,
+						"ias": 51.14,
+						"e1ng": 71.79,
+						"atvwpt": "RW36",
+						"altind": 682.1,
+						"altmsl": 680.7,
+						"tas": 51,
+						"vspd": 133.48
+					}
+				}
+			],
+			"originalFilename": "log_210102_123502_KMMU.csv"
+		},
+		{
+			"_id": "9c418489-c910-4304-beea-a12196e66830",
+			"Distance": "1086",
+			"AircraftID": "N321FF",
+			"Date": "2021-01-02",
+			"TimeOut": "2021-01-03T02:49:25.000Z",
+			"TimeIn": "2021-01-03T07:02:47.000Z",
+			"From": "KSUN",
+			"To": "KMSN",
+			"Route": "HLE KMSN SIDCO UFDIM HIREX RW14 ",
+			"TotalTime": 4.2,
+			"DayTakeoffs": 0,
+			"DayLandingsFullStop": 0,
+			"NightTakeoffs": 1,
+			"NightLandingsFullStop": 1,
+			"positionData": [
+				{
+					"name": "HLE",
+					"info": {
+						"lcltime": "21:52:35",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 43.4986534,
+						"longitude": -114.2936554,
+						"ias": 0,
+						"e1ng": 70.9,
+						"atvwpt": "HLE",
+						"altind": 5282.3,
+						"altmsl": 5273.8,
+						"tas": 0,
+						"vspd": 0.36
+					}
+				},
+				{
+					"name": "KMSN",
+					"info": {
+						"lcltime": "22:19:44",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 43.3435326,
+						"longitude": -114.2247696,
+						"ias": 135.21,
+						"e1ng": 94.39,
+						"atvwpt": "KMSN",
+						"altind": 11821.3,
+						"altmsl": 11722.5,
+						"tas": 166,
+						"vspd": 1395.32
+					}
+				},
+				{
+					"name": "SIDCO",
+					"info": {
+						"lcltime": "19:44:24",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 43.2449493,
+						"longitude": -90.2893295,
+						"ias": 234.95,
+						"e1ng": 97.78,
+						"atvwpt": "SIDCO",
+						"altind": 17208,
+						"altmsl": 17051.8,
+						"tas": 312,
+						"vspd": -1786.51
+					}
+				},
+				{
+					"name": "UFDIM",
+					"info": {
+						"lcltime": "19:53:04",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 43.2754135,
+						"longitude": -89.5145187,
+						"ias": 175.33,
+						"e1ng": 89.46,
+						"atvwpt": "UFDIM",
+						"altind": 3904,
+						"altmsl": 3817.6,
+						"tas": 190,
+						"vspd": -880.92
+					}
+				},
+				{
+					"name": "HIREX",
+					"info": {
+						"lcltime": "19:54:59",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 43.2067986,
+						"longitude": -89.4180527,
+						"ias": 137.8,
+						"e1ng": 84.69,
+						"atvwpt": "HIREX",
+						"altind": 2492,
+						"altmsl": 2460,
+						"tas": 146,
+						"vspd": -90.5
+					}
+				},
+				{
+					"name": "RW14",
+					"info": {
+						"lcltime": "19:56:49",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 43.1695061,
+						"longitude": -89.3696518,
+						"ias": 91.1,
+						"e1ng": 83.85,
+						"atvwpt": "RW14",
+						"altind": 1489,
+						"altmsl": 1509.9,
+						"tas": 93,
+						"vspd": -518.64
+					}
+				},
+				{
+					"name": "flightOff",
+					"info": {
+						"lcltime": "22:15:29",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 43.5105476,
+						"longitude": -114.3021088,
+						"ias": 51.24,
+						"e1ng": 96.33,
+						"atvwpt": "HLE",
+						"altind": 5341.3,
+						"altmsl": 5319.5,
+						"tas": 56,
+						"vspd": -104.32
+					}
+				},
+				{
+					"name": "flightOn",
+					"info": {
+						"lcltime": "19:58:27",
+						"lcldate": "2021-01-02",
+						"utcofst": "-06:00",
+						"latitude": 43.1431961,
+						"longitude": -89.3353806,
+						"ias": 51.97,
+						"e1ng": 71.98,
+						"atvwpt": "RW14",
+						"altind": 767,
+						"altmsl": 865.4,
+						"tas": 52,
+						"vspd": 86.4
+					}
+				}
+			],
+			"originalFilename": "log_210102_182222_KSUN.csv"
+		},
+		{
+			"_id": "ac20a391-029a-4724-9e4f-58792b5f3be1",
+			"Distance": "1126",
+			"AircraftID": "N321FF",
+			"Date": "2021-01-02",
+			"TimeOut": "2021-01-02T21:10:14.000Z",
+			"TimeIn": "2021-01-03T01:26:40.000Z",
+			"From": "KGRB",
+			"To": "KSUN",
+			"Route": "KSHR KSUN JUNOL MENIN HLE GUNKS CAKIR ",
+			"TotalTime": 4.3,
+			"DayTakeoffs": 1,
+			"DayLandingsFullStop": 0,
+			"NightTakeoffs": 0,
+			"NightLandingsFullStop": 1,
+			"positionData": [
+				{
+					"name": "KSHR",
+					"info": {
+						"lcltime": "16:14:58",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 44.4928131,
+						"longitude": -88.1297913,
+						"ias": 0,
+						"e1ng": 70.93,
+						"atvwpt": "KSHR",
+						"altind": 701.9,
+						"altmsl": 694.5,
+						"tas": 0,
+						"vspd": 3.21
+					}
+				},
+				{
+					"name": "KSUN",
+					"info": {
+						"lcltime": "18:48:33",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 44.8672142,
+						"longitude": -105.277977,
+						"ias": 203.32,
+						"e1ng": 96.93,
+						"atvwpt": "KSUN",
+						"altind": 23253,
+						"altmsl": 23186.9,
+						"tas": 300,
+						"vspd": 833
+					}
+				},
+				{
+					"name": "JUNOL",
+					"info": {
+						"lcltime": "18:58:35",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 44.7489738,
+						"longitude": -106.3430405,
+						"ias": 202.72,
+						"e1ng": 98.29,
+						"atvwpt": "JUNOL",
+						"altind": 26002,
+						"altmsl": 25883,
+						"tas": 312,
+						"vspd": 13.27
+					}
+				},
+				{
+					"name": "MENIN",
+					"info": {
+						"lcltime": "19:40:49",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 44.0116844,
+						"longitude": -110.8488312,
+						"ias": 198.7,
+						"e1ng": 99.02,
+						"atvwpt": "MENIN",
+						"altind": 28001,
+						"altmsl": 27753.3,
+						"tas": 316,
+						"vspd": -11.11
+					}
+				},
+				{
+					"name": "HLE",
+					"info": {
+						"lcltime": "20:05:05",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 43.3154602,
+						"longitude": -113.2943268,
+						"ias": 200.3,
+						"e1ng": 90.15,
+						"atvwpt": "HLE",
+						"altind": 13980.3,
+						"altmsl": 13798.5,
+						"tas": 255,
+						"vspd": -52.87
+					}
+				},
+				{
+					"name": "GUNKS",
+					"info": {
+						"lcltime": "20:12:43",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 43.3299828,
+						"longitude": -113.9359207,
+						"ias": 189.75,
+						"e1ng": 91.28,
+						"atvwpt": "GUNKS",
+						"altind": 7393.3,
+						"altmsl": 7305,
+						"tas": 216,
+						"vspd": -28.53
+					}
+				},
+				{
+					"name": "CAKIR",
+					"info": {
+						"lcltime": "20:17:29",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 43.4187698,
+						"longitude": -114.2129669,
+						"ias": 143.22,
+						"e1ng": 89.65,
+						"atvwpt": "CAKIR",
+						"altind": 7442.3,
+						"altmsl": 7356.8,
+						"tas": 164,
+						"vspd": -206.01
+					}
+				},
+				{
+					"name": "flightOff",
+					"info": {
+						"lcltime": "16:19:20",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 44.4918861,
+						"longitude": -88.1336594,
+						"ias": 55.31,
+						"e1ng": 93.16,
+						"atvwpt": "KSHR",
+						"altind": 723.9,
+						"altmsl": 700.9,
+						"tas": 55,
+						"vspd": 67.34
+					}
+				},
+				{
+					"name": "flightOn",
+					"info": {
+						"lcltime": "20:20:38",
+						"lcldate": "2021-01-02",
+						"utcofst": "+00:00",
+						"latitude": 43.500145,
+						"longitude": -114.2920685,
+						"ias": 52.27,
+						"e1ng": 72.05,
+						"atvwpt": "CAKIR",
+						"altind": 5299.3,
+						"altmsl": 5289.7,
+						"tas": 57,
+						"vspd": 241.08
+					}
+				}
+			],
+			"originalFilename": "log_210102_161014_KGRB.csv"
+		}
+	],
+	"originalFilenames": [
+		"log_210108_092831_KMMU.csv",
+		"log_210108_144525_KCHO.csv",
+		"log_210102_203702_KMSN.csv",
+		"log_210102_123502_KMMU.csv",
+		"log_210102_182222_KSUN.csv",
+		"log_210102_161014_KGRB.csv"
+	]
+}

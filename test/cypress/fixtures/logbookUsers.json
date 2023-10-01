@@ -1,0 +1,31 @@
+{
+	"_id": "63cec9236122fc06b503e164",
+	"aud": "authenticated",
+	"exp": 1674499890,
+	"sub": "3cf14142-2474-488d-8732-20fa92c8c176",
+	"email": "few-teacher@l6smqfno.mailosaur.net",
+	"phone": "",
+	"app_metadata": { "provider": "email", "providers": ["email"] },
+	"user_metadata": {},
+	"role": "authenticated",
+	"aal": "aal1",
+	"amr": [{ "method": "otp", "timestamp": 1674496290 }],
+	"session_id": "8362a041-4f39-4cdb-b565-9c0ceb721759",
+	"aircraft": {
+		"AircraftId": "N321FF",
+		"EquipmentType": "Aircraft",
+		"TypeCode": "TBM8",
+		"Make": "Socata",
+		"Model": "TBM 850",
+		"Category": "airplane",
+		"Class": "airplane_single_engine_land",
+		"GearType": "retractable_tricycle",
+		"EngineType": "Turboprop",
+		"Complex": true,
+		"TAA": true,
+		"HighPerformance": true,
+		"Pressurized": true
+	},
+	"logbookEntries": [],
+	"uid": "3cf14142-2474-488d-8732-20fa92c8c176"
+}
