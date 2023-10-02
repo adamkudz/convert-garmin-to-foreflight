@@ -46,7 +46,9 @@ export async function calculateFinalData(
 }
 async function fetchAirports(start, end) {
 	const airports = await api.post(
-		`${import.meta.env.VITE_API_URL}/getairport`,
+		`${
+			import.meta.env.VITE_API_URL || import.meta.env.VITE_STAGING_API_URL
+		}/getairport`,
 		{
 			start,
 			end,
