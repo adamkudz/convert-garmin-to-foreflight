@@ -1,19 +1,10 @@
 import { on } from 'events';
-import { join } from 'path';
-import fs from 'fs';
+
 const aircraft = {
 	aircraftId: Cypress.env('TEST_AIRCRAFT_ID'),
 	aircraftType: Cypress.env('TEST_AIRCRAFT_TYPE'),
 };
-const aircraft2 = {
-	aircraftId: 'n12345',
-	aircraftType: 'TBM 940',
-};
-const downloadsFolder = Cypress.config('downloadsFolder');
-const filename = join(
-	downloadsFolder,
-	`aircraft-${aircraft.aircraftId.toUpperCase()}.csv`
-);
+
 describe('End to End', function () {
 	it('creates an aircraft and converts flights', function () {
 		cy.task('csv:flightsDelete');

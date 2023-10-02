@@ -1,0 +1,9 @@
+Date,AircraftID,From,To,Route,TimeOut,TimeOff,TimeOn,TimeIn,OnDuty,OffDuty,TotalTime,PIC,SIC,Night,Solo,CrossCountry,NVG,NVG Ops,Distance,DayTakeoffs,DayLandingsFullStop,NightTakeoffs,NightLandingsFullStop,AllLandings,ActualInstrument,SimulatedInstrument,HobbsStart,HobbsEnd,TachStart,TachEnd,Holds,Approach1,Approach2,Approach3,Approach4,Approach5,Approach6,DualGiven,DualReceived,SimulatedFlight,GroundTraining,InstructorName,InstructorComments,FlightReview,Checkride,IPC,NVG Proficiency,FAA6158,PilotComments
+01/08/2021,N321FF,KMMU,KCHO,LANNA JITIV ,20:28,,,21:52,,,1.4,,,,,,,,315,1,0,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,
+01/08/2021,N321FF,KCHO,KMMU,WITTO HOSBE ,01:45,,,03:22,,,1.6,,,,,,,,282,0,0,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,
+01/17/2021,N321FF,KBQK,KMMU,BROUN ADOMS TORQD ,18:58,,,21:18,,,2.3,,,,,,,,667,1,1,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,
+01/02/2021,N321FF,KMSN,KMMU,BAE STENT LVZ HARTY MUGZY BINGG ,07:37,,,10:23,,,2.8,,,,,,,,684,0,0,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,
+01/02/2021,N321FF,KMMU,KGRB,COATE LAAYK YYOST DGRAF SENNA FRZZN MAZTT ,17:35,,,20:42,,,3.1,,,,,,,,667,1,1,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,
+01/15/2021,N321FF,KMMU,KBQK,ELVAE COL WHITE CYN SBY CHS WORGO ,18:27,,,21:59,,,3.5,,,,,,,,713,1,0,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,
+01/02/2021,N321FF,KSUN,KMSN,HLE SIDCO UFDIM HIREX ,02:49,,,07:02,,,4.2,,,,,,,,1096,0,0,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,
+01/02/2021,N321FF,KGRB,KSUN,GUNKS ,21:10,,,01:26,,,4.3,,,,,,,,1188,1,0,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,
