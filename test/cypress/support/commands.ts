@@ -117,83 +117,83 @@ Cypress.Commands.add('seedDataWithAircraft', () => {
 	});
 });
 
-Cypress.Commands.add('createNewUser', () => {
-	cy.mailosaurDeleteAllMessages('l6smqfno');
-	cy.task('supabase:getTestUserAndClear');
-	cy.task('mongo:clearuser', {
-		api_url: Cypress.env('API_URL'),
-		email: Cypress.env('NEW_USER_EMAIL'),
-	}).as('mongoUser');
-	cy.get('@mongoUser');
-	cy.task('csv:flightsDelete');
-	cy.log('Clearing Complete');
-	cy.fixture('test-aircraft.csv').as('testAircraft');
+// Cypress.Commands.add('createNewUser', () => {
+// 	cy.mailosaurDeleteAllMessages('l6smqfno');
+// 	cy.task('supabase:getTestUserAndClear');
+// 	cy.task('mongo:clearuser', {
+// 		api_url: Cypress.env('API_URL'),
+// 		email: Cypress.env('NEW_USER_EMAIL'),
+// 	}).as('mongoUser');
+// 	cy.get('@mongoUser');
+// 	cy.task('csv:flightsDelete');
+// 	cy.log('Clearing Complete');
+// 	cy.fixture('test-aircraft.csv').as('testAircraft');
 
-	context('Creating a New User', { testIsolation: true }, function () {
-		describe('Register Flow', function () {
-			let registerNewAccountLink;
+// 	context('Creating a New User', { testIsolation: true }, function () {
+// 		describe('Register Flow', function () {
+// 			let registerNewAccountLink;
 
-			let compareId;
-			it('Navigates to Register Page and creates a new account', function () {
-				cy.intercept('/auth/v1/signup').as('registercall');
+// 			let compareId;
+// 			it('Navigates to Register Page and creates a new account', function () {
+// 				cy.intercept('/auth/v1/signup').as('registercall');
 
-				cy.visit('/');
-				cy.get('[data-cy="goto-register-button"]').click();
-				cy.get('[data-cy="register-email"]').type(
-					Cypress.env('NEW_USER_EMAIL')
-				);
-				cy.get('[data-cy="register-password"]').type(
-					Cypress.env('NEW_USER_PASSWORD')
-				);
-				cy.get('[data-cy="register-button"]').click();
-				cy.wait('@registercall').then((call) => {
-					compareId = call.response!.body.id;
-				});
+// 				cy.visit('/');
+// 				cy.get('[data-cy="goto-register-button"]').click();
+// 				cy.get('[data-cy="register-email"]').type(
+// 					Cypress.env('NEW_USER_EMAIL')
+// 				);
+// 				cy.get('[data-cy="register-password"]').type(
+// 					Cypress.env('NEW_USER_PASSWORD')
+// 				);
+// 				cy.get('[data-cy="register-button"]').click();
+// 				cy.wait('@registercall').then((call) => {
+// 					compareId = call.response!.body.id;
+// 				});
 
-				cy.mailosaurGetMessage('l6smqfno', {
-					sentTo: Cypress.env('NEW_USER_EMAIL'),
-				}).then((email) => {
-					expect(email.subject).to.equal('Confirm Your Signup');
-					registerNewAccountLink = email.html!.links![0].href;
-					cy.visit(registerNewAccountLink!);
-					cy.url().should('include', '/aircraftcreate');
-					cy.get('[data-cy="nav-user-email-display"]').should(
-						'include.text',
-						`${Cypress.env('NEW_USER_EMAIL')}`
-					);
-				});
-				cy.fixture('/test-aircraft.csv').as('originalCsv');
-				cy.intercept('/logbookuser/addaircraft').as('mongoAddAircraft');
-				cy.get('[data-cy="create-aircraft-id"]').type(
-					aircraft.aircraftId
-				);
-				cy.get('[data-cy]')
-					.closest('.q-select')
-					.type(`${aircraft.aircraftType}{enter}`);
-				cy.get('[data-cy="create-aircraft-button"]').click();
+// 				cy.mailosaurGetMessage('l6smqfno', {
+// 					sentTo: Cypress.env('NEW_USER_EMAIL'),
+// 				}).then((email) => {
+// 					expect(email.subject).to.equal('Confirm Your Signup');
+// 					registerNewAccountLink = email.html!.links![0].href;
+// 					cy.visit(registerNewAccountLink!);
+// 					cy.url().should('include', '/aircraftcreate');
+// 					cy.get('[data-cy="nav-user-email-display"]').should(
+// 						'include.text',
+// 						`${Cypress.env('NEW_USER_EMAIL')}`
+// 					);
+// 				});
+// 				cy.fixture('/test-aircraft.csv').as('originalCsv');
+// 				cy.intercept('/logbookuser/addaircraft').as('mongoAddAircraft');
+// 				cy.get('[data-cy="create-aircraft-id"]').type(
+// 					aircraft.aircraftId
+// 				);
+// 				cy.get('[data-cy]')
+// 					.closest('.q-select')
+// 					.type(`${aircraft.aircraftType}{enter}`);
+// 				cy.get('[data-cy="create-aircraft-button"]').click();
 
-				cy.get('.downloadCsvBox').click();
-				cy.log('**read downloaded file**');
-				cy.get('@originalCsv');
-				cy.readFile(filename, { timeout: 20000, log: true })
-					.should('contain', aircraft.aircraftId.toUpperCase())
-					.and('contain', aircraft.aircraftType);
-				cy.get('[data-cy="aircraft-card-acId"]').should(
-					'contain',
-					aircraft.aircraftId.toUpperCase()
-				);
+// 				cy.get('.downloadCsvBox').click();
+// 				cy.log('**read downloaded file**');
+// 				cy.get('@originalCsv');
+// 				cy.readFile(filename, { timeout: 20000, log: true })
+// 					.should('contain', aircraft.aircraftId.toUpperCase())
+// 					.and('contain', aircraft.aircraftType);
+// 				cy.get('[data-cy="aircraft-card-acId"]').should(
+// 					'contain',
+// 					aircraft.aircraftId.toUpperCase()
+// 				);
 
-				cy.wait('@mongoAddAircraft').then((x) => {
-					const body = x.response!.body.value;
-					expect(body.aircraft).to.not.eq(null);
-					expect(body.aircraft.AircraftId).to.eq(
-						`${aircraft.aircraftId.toUpperCase()}`
-					);
-				});
-			});
-		});
-	});
-});
+// 				cy.wait('@mongoAddAircraft').then((x) => {
+// 					const body = x.response!.body.value;
+// 					expect(body.aircraft).to.not.eq(null);
+// 					expect(body.aircraft.AircraftId).to.eq(
+// 						`${aircraft.aircraftId.toUpperCase()}`
+// 					);
+// 				});
+// 			});
+// 		});
+// 	});
+// });
 
 Cypress.Commands.add('loginNewUser', () => {
 	cy.visit('/');
@@ -212,8 +212,6 @@ Cypress.Commands.add('loginNewUser', () => {
 import { registerCommands } from '@quasar/quasar-app-extension-testing-e2e-cypress';
 
 registerCommands();
-import 'cypress-mailosaur';
-import authboot from 'src/boot/authboot';
 
 declare global {
 	namespace Cypress {

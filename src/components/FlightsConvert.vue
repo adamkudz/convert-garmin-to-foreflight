@@ -2,7 +2,7 @@
 import Papa from 'papaparse';
 
 import { uid } from 'quasar';
-import { ref, defineEmits, computed } from 'vue';
+import { ref, computed } from 'vue';
 
 import {
 	calculateFinalData,
@@ -11,11 +11,10 @@ import {
 	calculateDistanceBySegment,
 } from 'src/functions/index.js';
 
-import {
+import type {
 	FlightEntry,
 	PapaReturn,
 	PapaReturnData,
-	ParseFileCallback,
 } from 'app/types/LogbookTypes';
 
 import SelectedFlightsDisplay from 'src/components/ConvertFlights/SelectedFlightsDisplay.vue';
@@ -29,7 +28,6 @@ const emit = defineEmits<{
 	(e: 'closeModal'): void;
 }>();
 
-let parsedFlights: PapaReturnData[] = [];
 const step = ref<number>(1);
 const showPreview = ref<boolean>(false);
 
@@ -85,7 +83,7 @@ function convertFlights(selectedFiles: File[]) {
 		'vspd',
 	];
 	try {
-		async function parseFile(file: File, cb: ParseFileCallback) {
+		async function parseFile(file: File) {
 			if (!file) {
 				return;
 			}
@@ -118,7 +116,6 @@ function convertFlights(selectedFiles: File[]) {
 				},
 
 				complete: async function () {
-					cb(flightData as PapaReturnData[]);
 					let positions = await getFlightPositions(flightData);
 					let flightEntry = await calculateFinalData(
 						positions,
@@ -155,10 +152,7 @@ function convertFlights(selectedFiles: File[]) {
 				return;
 			}
 			let file = uploadFiles[0];
-
-			await parseFile(file, (flightData: PapaReturnData[]) => {
-				parsedFlights.push(...flightData);
-			});
+			await parseFile(file);
 			runParser(uploadFiles.slice(1));
 		}
 
