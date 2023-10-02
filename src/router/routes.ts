@@ -16,7 +16,7 @@ const routes: RouteRecordRaw[] = [
 
 	{
 		path: '/help',
-		component: () => import('layouts/MainLayout.vue'),
+		component: () => import('layouts/FrontLayout.vue'),
 		children: [
 			{
 				path: '',
