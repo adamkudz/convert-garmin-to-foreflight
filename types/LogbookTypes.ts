@@ -4,7 +4,10 @@ export interface PlatformConfig {
 	name: string;
 	aircraftHeaders: string[];
 	flightHeaders: string[];
-	transformToCsv: (flightEntries: FlightEntry[], user: LogbookUser) => any[];
+	transformToCsv: (
+		flightEntries: FlightEntry[],
+		user: LogbookUser
+	) => string[];
 }
 
 export interface LogbookUser {
@@ -109,24 +112,6 @@ export interface ParseFileCallback {
 export interface PapaReturnData {
 	[index: string]: string;
 }
-
-// export interface GarminFlightParams {
-// 	[index: string]: string | number | undefined;
-// 	lcltime: string;
-// 	lcldate: string;
-// 	utcofst: string;
-// 	latitude: number;
-// 	longitude: number;
-// 	ias: number;
-// 	e1ng?: number;
-// 	atvwpt: string;
-// 	wptdst: number;
-// 	altind?: number;
-// 	altmsl?: number;
-// 	gndspd?: number;
-// 	tas?: number;
-// 	vspd?: number;
-// }
 
 export interface AptObj {
 	[index: string]: string | number;

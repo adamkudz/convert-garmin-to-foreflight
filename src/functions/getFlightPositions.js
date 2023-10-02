@@ -17,7 +17,6 @@ export async function getFlightPositions(flight) {
 		positions = { ...positions, ...start, ...end, routeString, wpts };
 
 		return positions;
-		// calculateFinalData(flightObj, AircraftID);
 	} catch (err) {
 		return err;
 	}

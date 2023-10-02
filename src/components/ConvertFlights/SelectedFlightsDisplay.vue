@@ -1,15 +1,13 @@
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
 	selectedFiles: File[];
 	removedFiles: File[];
 }>();
 
-const emits = defineEmits<{
+defineEmits<{
 	(e: 'convertFlights', value: File[]): void;
 	(e: 'reset'): void;
 }>();
-
-const firstFiveFiles = props.selectedFiles.slice(0, 5);
 </script>
 <template>
 	<div>

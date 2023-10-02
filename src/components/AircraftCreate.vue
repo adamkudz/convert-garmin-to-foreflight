@@ -1,20 +1,15 @@
 <script setup lang="ts">
 import { reactive, ref, watch } from 'vue';
 import type { Aircraft } from 'app/types/LogbookTypes';
-import { useRouter } from 'vue-router';
 import { useVuelidate } from '@vuelidate/core';
 import { required, alphaNum, helpers, maxLength } from '@vuelidate/validators';
 import { acTypeSwitch } from 'src/composables/typeSwitch';
 import { stringify } from 'csv-stringify/browser/esm';
-import { useQuasar } from 'quasar';
-import { downloadFile } from 'src/functions/downloadFile';
+
 import { useAircraftStore } from 'src/stores/AircraftStore';
 
-const $q = useQuasar();
 const tailNumberInputRef = ref(null);
 
-const router = useRouter();
-const aircraftStore = useAircraftStore();
 const acList = [
 	'TBM 700 A',
 	'TBM 700 B',
@@ -102,7 +97,7 @@ async function createAircraftTable() {
 							@on-blur="() => Vuelidate.$validate()"
 							:error="Vuelidate.AircraftId.$error"
 						>
-							<template v-slot:error>
+							<template #error>
 								<p
 									data-cy="create-aircraft-id-error"
 									class="negative-message"

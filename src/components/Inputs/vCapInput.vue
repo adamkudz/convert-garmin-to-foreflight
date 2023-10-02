@@ -5,8 +5,14 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 const props = defineProps({
-	modelValue: String,
-	modelModifiers: { default: () => ({ allcaps: false }) },
+	modelValue: {
+		type: String,
+		default: '',
+	},
+	modelModifiers: {
+		type: Object,
+		default: () => ({}),
+	},
 });
 const emits = defineEmits(['update:modelValue']);
 

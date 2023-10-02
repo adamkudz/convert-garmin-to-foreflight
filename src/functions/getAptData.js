@@ -28,7 +28,7 @@ export async function getAptData(flight, index, position) {
 		lon: xLon,
 	};
 
-	function getTz(_lon, _lat, _date, _time) {
+	function getTz(_lon, _lat, _date) {
 		const s = spacetime(_date);
 		const loc = s.in([_lat, _lon]);
 		return loc.timezone().name;

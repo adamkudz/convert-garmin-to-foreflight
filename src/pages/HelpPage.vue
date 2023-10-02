@@ -7,7 +7,7 @@ import ForeFlightDuplicates from 'src/components/Help/ForeFlightDuplicates.vue';
 import ForeflightFiles from 'src/components/Help/ForeflightFiles.vue';
 import { cld } from 'src/boot/cloudinaryBoot';
 import { AdvancedImage } from '@cloudinary/vue';
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/all';
@@ -107,17 +107,17 @@ function scrollToTop(id: HTMLElement, active: string) {
 				<h4>Creating An Aircraft File</h4>
 
 				<AppAddingAircraft>
-					<template v-slot:img1
+					<template #img1
 						><AdvancedImage
 							width="500"
 							:cld-img="cld.image('Logbook/help-aircraft-01')"
 					/></template>
-					<template v-slot:img2
+					<template #img2
 						><AdvancedImage
 							width="500"
 							:cld-img="cld.image('Logbook/help-aircraft-03')"
 					/></template>
-					<template v-slot:img3
+					<template #img3
 						><AdvancedImage
 							:cld-img="cld.image('Logbook/help-aircraft-04')"
 					/></template>
@@ -132,32 +132,32 @@ function scrollToTop(id: HTMLElement, active: string) {
 			>
 				<h4>Loading Your Aircraft Into Foreflight</h4>
 				<ForeFlightAddingAircraft>
-					<template v-slot:img1
+					<template #img1
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-aircraft-1')"
 					/></template>
-					<template v-slot:img2
+					<template #img2
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-aircraft-2')"
 					/></template>
-					<template v-slot:img3
+					<template #img3
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-aircraft-3')"
 					/></template>
-					<template v-slot:img4
+					<template #img4
 						><AdvancedImage
 							width="700"
 							:cld-img="cld.image('Logbook/help-aircraft-4')"
 					/></template>
-					<template v-slot:img5
+					<template #img5
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-aircraft-5')"
 					/></template>
-					<template v-slot:img6
+					<template #img6
 						><AdvancedImage
 							:cld-img="cld.image('Logbook/help-aircraft-6')"
 					/></template>
@@ -171,27 +171,27 @@ function scrollToTop(id: HTMLElement, active: string) {
 				<h4>Converting Your Flights</h4>
 
 				<AppAddingFlights>
-					<template v-slot:img1
+					<template #img1
 						><AdvancedImage
 							width="400"
 							:cld-img="cld.image('Logbook/help-flights-01')"
 					/></template>
-					<template v-slot:img2
+					<template #img2
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-flights-02')"
 					/></template>
-					<template v-slot:img3
+					<template #img3
 						><AdvancedImage
 							width="400"
 							:cld-img="cld.image('Logbook/help-flights-03')"
 					/></template>
-					<template v-slot:img4
+					<template #img4
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-flights-05')"
 					/></template>
-					<template v-slot:img5
+					<template #img5
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-flights-06')"
@@ -205,27 +205,27 @@ function scrollToTop(id: HTMLElement, active: string) {
 			>
 				<h4>Loading Flights Into Foreflight</h4>
 				<ForeFlightAddingFlights>
-					<template v-slot:img1
+					<template #img1
 						><AdvancedImage
 							:cld-img="cld.image('Logbook/help-flights-1')"
 					/></template>
-					<template v-slot:img2
+					<template #img2
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-flights-2')"
 					/></template>
-					<template v-slot:img3
+					<template #img3
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-flights-3')"
 					/></template>
-					<template v-slot:img4
+					<template #img4
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-flights-4')"
 					/></template>
 
-					<template v-slot:img6
+					<template #img6
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-flights-6')"
@@ -238,12 +238,12 @@ function scrollToTop(id: HTMLElement, active: string) {
 			<section class="helpSection fileManagement" ref="fileManagementRef">
 				<h4>File Management</h4>
 				<ForeFlightDuplicates>
-					<template v-slot:img1
+					<template #img1
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-files-1')"
 					/></template>
-					<template v-slot:img2
+					<template #img2
 						><AdvancedImage
 							width="600"
 							:cld-img="cld.image('Logbook/help-files-03')"
@@ -252,7 +252,7 @@ function scrollToTop(id: HTMLElement, active: string) {
 			</section>
 			<section class="fileStuff">
 				<ForeflightFiles>
-					<template v-slot:img1
+					<template #img1
 						><AdvancedImage
 							:cld-img="cld.image('Logbook/help-files-2')"
 					/></template>
@@ -297,9 +297,6 @@ img {
 
 .helpSection:deep(p) {
 	margin: 2rem;
-}
-
-section {
 }
 
 section:deep(p) {

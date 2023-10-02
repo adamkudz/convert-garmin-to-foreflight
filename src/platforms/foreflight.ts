@@ -1,7 +1,7 @@
 import spacetime from 'spacetime';
 import { Input } from 'csv-stringify';
 
-import { FlightEntry, LogbookUser } from 'app/types/LogbookTypes';
+import { FlightEntry } from 'app/types/LogbookTypes';
 
 const config = {
 	name: 'foreflight',
@@ -73,7 +73,7 @@ const config = {
 		'FAA6158',
 		'PilotComments',
 	],
-	transformToCsv: (flightEntries: FlightEntry[], user: LogbookUser) => {
+	transformToCsv: (flightEntries: FlightEntry[]) => {
 		const csvArray: Input = [];
 		flightEntries.forEach((flight) => {
 			flight.Date = spacetime(flight.Date).format('numeric-us');

@@ -1,7 +1,6 @@
 import { api } from 'src/boot/axios';
 import spacetime from 'spacetime';
 import daylight from 'spacetime-daylight';
-import { calculateDistance } from '.';
 
 spacetime.extend(daylight);
 
@@ -19,13 +18,7 @@ export async function calculateFinalData(
 		let ffObj = {};
 		ffObj._id = flightId;
 		let finalTimes = calculateFinalTimes(flight);
-		// ffObj.Distance = calculateDistance(
-		// 	flight.start.lat,
-		// 	flight.start.lon,
-		// 	flight.end.lat,
-		// 	flight.end.lon,
-		// 	'N'
-		// );
+
 		ffObj.Distance = 0;
 		ffObj.AircraftID = AircraftID.toUpperCase();
 		ffObj.Date = flight.start.date;
@@ -78,16 +71,6 @@ function calculateFinalTimes(finalObj) {
 	return { start, end, totalTime };
 }
 
-// function calculateNightTime(_startTime, _endTime) {
-// 	let sPos = spacetime(_startTime);
-// 	let ePos = spacetime(_endTime);
-// 	let sunset = ePos.sunset();
-
-// 	let diff = ePos.diff(sunset, 'minutes');
-// 	let nightTime = parseFloat((diff / 60).toFixed(1));
-// 	return nightTime;
-// }
-
 function calculateToAndLandings(daylightResults) {
 	let sDayTime = daylightResults.isStartDaylight;
 	let eDayTime = daylightResults.isEndDaylight;
@@ -99,27 +82,3 @@ function calculateToAndLandings(daylightResults) {
 	eDayTime ? dl++ : nl++;
 	return { dt, dl, nt, nl };
 }
-
-// function calculateDistanceBySegment(flightEntry) {
-// 	let total = 0;
-// 	flightEntry?.positionData.forEach((pos, index) => {
-// 		let nextPos = flightEntry?.positionData[index + 1];
-// 		if (nextPos) {
-// 			let distance = calculateDistance(
-// 				pos.info.latitude,
-// 				pos.info.longitude,
-// 				nextPos.info.latitude,
-// 				nextPos.info.longitude,
-// 				'N'
-// 			);
-// 			total += parseFloat(distance);
-// 			console.log(total);
-// 		} else {
-// 			return;
-// 		}
-// 	});
-// 	if (flightEntry) {
-// 		flightEntry.Distance = total;
-// 	}
-// 	return total;
-// }
