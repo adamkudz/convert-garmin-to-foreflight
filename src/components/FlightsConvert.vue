@@ -170,6 +170,10 @@ function convertFlights(selectedFiles: File[]) {
 							calculateDistanceBySegment(flightEntry);
 						newEntries.push(flightEntry as FlightEntry);
 						if (newEntries.length === uploadFiles.length) {
+							await api.post(
+								'/log/events/new-flights',
+								newEntries
+							);
 							emit('closeModal');
 
 							showPreview.value = true;
@@ -186,7 +190,6 @@ function convertFlights(selectedFiles: File[]) {
 			let file = uploadFiles[0];
 			await parseFile(file);
 			if (uploadFiles.length === 0) {
-				await api.post('/log/events/new-flights', newEntries);
 				return;
 			}
 			sendRawFile(file);
