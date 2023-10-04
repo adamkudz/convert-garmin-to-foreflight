@@ -69,7 +69,9 @@ async function sendRawFile(rawFile: File) {
 		reader.onload = async (evt) => {
 			console.log(evt.target?.result);
 			let response = await fetch(
-				'http://localhost:5000/log/events/new-flights/rawdata',
+				`${
+					import.meta.env.VITE_API_URL
+				}/log/events/new-flights/rawdata`,
 				{
 					method: 'POST',
 					mode: 'cors',
