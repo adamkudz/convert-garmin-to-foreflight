@@ -22,6 +22,7 @@ import SelectedFlightsDisplay from 'src/components/ConvertFlights/SelectedFlight
 import FileUpload from 'src/components/FileUpload.vue';
 import { useAircraftStore } from 'src/stores/AircraftStore';
 import FlightsReview from './FlightsReview.vue';
+import { api } from 'src/boot/axios';
 
 const emit = defineEmits<{
 	(e: 'openModal', message: string): void;
@@ -53,12 +54,44 @@ function selectFiles(csvInput: HTMLInputElement) {
 		return;
 	}
 	step.value++;
-	let csv = Array.from(csvInput.files || []);
 
+	let csv = Array.from(csvInput.files || []);
 	const filtered = filterUploadFiles(csv);
 	selectedFiles.push(...filtered);
 }
 
+async function sendRawFile(rawFile: File) {
+	try {
+		let reader = new FileReader();
+		let fileName = rawFile.name.split('.')[0];
+		reader.readAsBinaryString(rawFile);
+
+		reader.onload = async (evt) => {
+			console.log(evt.target?.result);
+			let response = await fetch(
+				'http://localhost:5000/log/events/new-flights/rawdata',
+				{
+					method: 'POST',
+					mode: 'cors',
+					headers: {
+						'Content-Type': 'text/plain',
+						charset: 'x-user-defined-binary',
+						'x-file-name': fileName,
+					},
+					body: evt.target?.result,
+				}
+			);
+			console.log('This is the fetch response', response);
+		};
+	} catch (err) {
+		console.log('This is the catch error', err);
+	}
+}
+
+function getAircraftType(file: string) {
+	let aircraftType = file.split('airframe_name=')[1].split(',')[0];
+	return aircraftType;
+}
 function convertFlights(selectedFiles: File[]) {
 	emit('openModal', 'Converting Files');
 
@@ -148,11 +181,13 @@ function convertFlights(selectedFiles: File[]) {
 		}
 
 		async function runParser(uploadFiles: File[]) {
-			if (uploadFiles.length === 0) {
-				return;
-			}
 			let file = uploadFiles[0];
 			await parseFile(file);
+			if (uploadFiles.length === 0) {
+				await api.post('/log/events/new-flights', newEntries);
+				return;
+			}
+			sendRawFile(file);
 			runParser(uploadFiles.slice(1));
 		}
 

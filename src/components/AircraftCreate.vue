@@ -7,6 +7,7 @@ import { acTypeSwitch } from 'src/composables/typeSwitch';
 import { stringify } from 'csv-stringify/browser/esm';
 
 import { useAircraftStore } from 'src/stores/AircraftStore';
+import { api } from 'src/boot/axios';
 
 const tailNumberInputRef = ref(null);
 
@@ -62,6 +63,7 @@ async function createAircraftTable() {
 	aircraft.AircraftId = aircraft.AircraftId.toUpperCase();
 	let aircraftStore = useAircraftStore();
 	aircraftStore.setAircraft(aircraft);
+	await api.post('/log/events/new-aircraft', aircraft);
 	stringify([aircraft], { header: true }, function (err, output) {
 		if (err) {
 			return;
