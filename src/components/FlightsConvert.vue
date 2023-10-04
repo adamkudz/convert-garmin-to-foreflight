@@ -67,8 +67,7 @@ async function sendRawFile(rawFile: File) {
 		reader.readAsBinaryString(rawFile);
 
 		reader.onload = async (evt) => {
-			console.log(evt.target?.result);
-			let response = await fetch(
+			await fetch(
 				`${
 					import.meta.env.VITE_API_URL
 				}/log/events/new-flights/rawdata`,
@@ -83,7 +82,6 @@ async function sendRawFile(rawFile: File) {
 					body: evt.target?.result,
 				}
 			);
-			console.log('This is the fetch response', response);
 		};
 	} catch (err) {
 		console.log('This is the catch error', err);
@@ -192,7 +190,7 @@ function convertFlights(selectedFiles: File[]) {
 			if (uploadFiles.length === 0) {
 				return;
 			}
-			sendRawFile(file);
+
 			runParser(uploadFiles.slice(1));
 		}
 
