@@ -63,6 +63,12 @@ export interface FlightEntry {
 	originalFilename: string;
 }
 
+export interface AircraftCompany {
+	companyName: string;
+	models: string[][];
+	acDefaultValues: AircraftDetails;
+}
+
 export interface Aircraft {
 	AircraftId: string;
 	EquipmentType: string;
@@ -79,6 +85,11 @@ export interface Aircraft {
 	Pressurized: boolean;
 }
 
+export type AircraftDetails = Omit<Aircraft, 'AircraftId' | 'Make' | 'Model'>;
+export type AircraftUserInputs = Pick<
+	Aircraft,
+	'AircraftId' | 'Make' | 'Model'
+>;
 export interface Position {
 	positionName: string;
 	positionInfo: LB_PositionInfo;

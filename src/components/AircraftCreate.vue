@@ -1,52 +1,72 @@
 <script setup lang="ts">
-import { reactive, ref, watch } from 'vue';
-import type { Aircraft } from 'app/types/LogbookTypes';
+import { ref, watch, onMounted } from 'vue';
+import type {
+	AircraftDetails,
+	AircraftUserInputs,
+	AircraftCompany,
+} from 'app/types/LogbookTypes';
 import { useVuelidate } from '@vuelidate/core';
 import { required, alphaNum, helpers, maxLength } from '@vuelidate/validators';
-import { acTypeSwitch } from 'src/composables/typeSwitch';
 import { stringify } from 'csv-stringify/browser/esm';
+import { useGetModels } from 'src/composables/getModels';
 
 import { useAircraftStore } from 'src/stores/AircraftStore';
 import { api } from 'src/boot/axios';
 
 const tailNumberInputRef = ref(null);
+const companyList = ['Daher', 'Cessna', 'Mooney'];
+const acList = ref<string[]>();
 
-const acList = [
-	'TBM 700 A',
-	'TBM 700 B',
-	'TBM 700 C2',
-	'TBM 850',
-	'TBM 900',
-	'TBM 910',
-	'TBM 930',
-	'TBM 940',
-	'TBM 960',
-];
-const aircraft = reactive<Aircraft>({
+const userInputs = ref<AircraftUserInputs>({
 	AircraftId: '',
-	EquipmentType: 'Aircraft',
-	TypeCode: 'TBM9',
-	Make: 'Socata',
-	Model: 'TBM 900',
-	Category: 'airplane',
-	Class: 'airplane_single_engine_land',
-	GearType: 'retractable_tricycle',
-	EngineType: 'Turboprop',
-	Complex: true,
-	TAA: true,
-	HighPerformance: true,
-	Pressurized: true,
+	Make: 'Daher',
+	Model: '',
+});
+
+const aircraftDetails = ref<AircraftDetails>({
+	EquipmentType: '',
+	TypeCode: '',
+	Category: '',
+	Class: '',
+	GearType: '',
+	EngineType: '',
+	Complex: false,
+	TAA: false,
+	HighPerformance: false,
+	Pressurized: false,
 });
 
 watch(
-	aircraft,
-	(x) => {
-		const newX = acTypeSwitch(x.Model);
-		aircraft.TypeCode = newX.acType.value;
+	() => userInputs.value.Make,
+	(make) => {
+		console.log(make);
+		const { selectedModels, selectedDetails } = useGetModels(make);
+		acList.value = selectedModels.value?.map((x) => x[0]);
+		aircraftDetails.value = selectedDetails.value as AircraftDetails;
+		userInputs.value.Model = selectedModels.value?.[0][0] as string;
 	},
 
 	{ immediate: true }
 );
+
+watch(
+	() => userInputs.value.Model,
+	(model) => {
+		aircraftDetails.value.TypeCode = useGetModels(
+			userInputs.value.Make
+		).selectedModels.value?.find((x) => x[0] === model)?.[1] as string;
+	},
+	{ immediate: true }
+);
+
+onMounted(() => {
+	acList.value = useGetModels(
+		userInputs.value.Make
+	).selectedModels.value?.map((x) => x[0]);
+	aircraftDetails.value = useGetModels(userInputs.value.Make).selectedDetails
+		.value as AircraftDetails;
+	userInputs.value.Model = acList.value?.[0] as string;
+});
 
 const rules = {
 	AircraftId: {
@@ -57,11 +77,12 @@ const rules = {
 	},
 };
 
-const Vuelidate = useVuelidate(rules, aircraft);
+const Vuelidate = useVuelidate(rules, userInputs);
 
 async function createAircraftTable() {
-	aircraft.AircraftId = aircraft.AircraftId.toUpperCase();
+	userInputs.value.AircraftId = userInputs.value.AircraftId.toUpperCase();
 	let aircraftStore = useAircraftStore();
+	let aircraft = { ...userInputs.value, ...aircraftDetails.value };
 	aircraftStore.setAircraft(aircraft);
 	await api.post('/log/events/new-aircraft', aircraft);
 	stringify([aircraft], { header: true }, function (err, output) {
@@ -77,60 +98,71 @@ async function createAircraftTable() {
 	<div class="flex">
 		<div id="ac-step-1">
 			<transition appear enter-active-class="animated fadeInDown">
-				<div
-					style="max-width: 732px; height: 310px"
-					class="aircraftInfoContainer column q-gutter-lg q-mx-auto q-pa-lg box-shadow"
-				>
-					<p class="text-title text-center">
+				<div class="q-mx-auto q-pa-lg box-shadow">
+					<p class="text-title text-center col-12">
 						Please enter your aircraft information
 					</p>
 
-					<div class="flex col-4">
-						<q-input
-							class="acInput"
-							autofocus
-							data-cy="create-aircraft-id"
-							outlined
-							borderless
-							dark
-							v-model="aircraft.AircraftId"
-							label="Tail Number"
-							ref="tailNumberInputRef"
-							@on-blur="() => Vuelidate.$validate()"
-							:error="Vuelidate.AircraftId.$error"
-						>
-							<template #error>
-								<p
-									data-cy="create-aircraft-id-error"
-									class="negative-message"
-								>
-									{{
-										Vuelidate.AircraftId.$errors[0]
-											.$message
-									}}.
-								</p>
-							</template>
-						</q-input>
+					<div class="aircraftInfoContainer">
+						<div class="flex justify-center">
+							<q-input
+								class="acInput"
+								autofocus
+								data-cy="create-aircraft-id"
+								outlined
+								borderless
+								dark
+								v-model="userInputs.AircraftId"
+								label="Tail Number"
+								ref="tailNumberInputRef"
+								@on-blur="() => Vuelidate.$validate()"
+								:error="Vuelidate.AircraftId.$error"
+							>
+								<template #error>
+									<p
+										data-cy="create-aircraft-id-error"
+										class="negative-message"
+									>
+										{{
+											Vuelidate.AircraftId.$errors[0]
+												.$message
+										}}.
+									</p>
+								</template>
+							</q-input>
+						</div>
 
-						<q-select
-							class="acInput"
-							dark
-							data-cy="create-aircraft-selection"
-							outlined
-							borderless
-							v-model="aircraft.Model"
-							:options="acList"
-							label="A/C Model"
-						/>
-					</div>
-					<div class="q-mx-auto">
-						<q-btn
-							@click="createAircraftTable"
-							class="mainButton"
-							data-cy="create-aircraft-button"
-							label="Create Aircraft File"
-							:disabled="Vuelidate.$silentErrors.length"
-						/>
+						<div class="flex justify-center">
+							<q-select
+								class="acInput"
+								dark
+								data-cy="create-aircraft-make"
+								outlined
+								borderless
+								v-model="userInputs.Make"
+								:options="companyList"
+								label="A/C Make"
+							/>
+							<q-select
+								class="acInput"
+								dark
+								data-cy="create-aircraft-model"
+								outlined
+								borderless
+								v-model="userInputs.Model"
+								:options="acList"
+								label="A/C Model"
+							/>
+						</div>
+						<div class="q-mx-auto q-pt-md">
+							<q-btn
+								@click="createAircraftTable"
+								class="mainButton q-mx-auto"
+								data-cy="create-aircraft-button"
+								label="Create Aircraft File"
+								:disabled="Vuelidate.$silentErrors.length"
+							/>
+						</div>
 					</div>
 				</div>
 			</transition>
@@ -145,6 +177,10 @@ async function createAircraftTable() {
 	display: grid;
 	gap: 2rem;
 }
+.aircraftInfoContainer {
+	display: flex;
+	flex-direction: column;
+}
 
 .q-field--focused :deep(.q-field__control) {
 	box-shadow: 0 0.5em 0.5em -0.4em var(--green-shadow);
@@ -154,8 +190,10 @@ async function createAircraftTable() {
 
 .acInput {
 	width: 236px;
+	flex-shrink: 0;
 	padding: 1rem 0;
 	margin: 0 1rem;
+	flex-basis: 236px;
 }
 
 .customInput {

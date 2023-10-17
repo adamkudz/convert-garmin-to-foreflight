@@ -23,6 +23,7 @@
 		"altmsl",
 		"atvwpt",
 		"Checkride",
+		"daher",
 		"errordesktoponly",
 		"foreflight",
 		"helppage",
@@ -32,6 +33,7 @@
 		"utcofst",
 		"VITE",
 		"vspd",
-		"wptdst"
+		"wptdst",
+		"wpts"
 	]
 }

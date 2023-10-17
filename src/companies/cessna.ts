@@ -1,8 +1,10 @@
 // Cessna
 //
 
-const cessna = {
-	companyName: 'cessna',
+import { AircraftCompany } from 'app/types/LogbookTypes';
+
+const Cessna = <AircraftCompany>{
+	companyName: 'Cessna',
 	models: [
 		['150', 'c150'],
 		['152', 'c152'],
@@ -29,6 +31,18 @@ const cessna = {
 		['1200', 'c1200'],
 		['1500', 'c1500'],
 	],
+	acDefaultValues: {
+		EquipmentType: 'Aircraft',
+		TypeCode: '',
+		Category: 'airplane',
+		Class: 'airplane_single_engine_land',
+		GearType: 'fixed_tricycle',
+		EngineType: 'Piston',
+		Complex: false,
+		TAA: true,
+		HighPerformance: false,
+		Pressurized: false,
+	},
 };
 
-export default cessna;
+export default Cessna;
