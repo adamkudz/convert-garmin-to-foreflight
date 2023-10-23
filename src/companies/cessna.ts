@@ -2,6 +2,7 @@
 //
 
 import { AircraftCompany } from 'app/types/LogbookTypes';
+import g1000nxi from 'src/avionics/g1000nxi';
 
 const Cessna = <AircraftCompany>{
 	companyName: 'Cessna',
@@ -43,6 +44,7 @@ const Cessna = <AircraftCompany>{
 		HighPerformance: false,
 		Pressurized: false,
 	},
+	avionics: g1000nxi,
 };
 
 export default Cessna;

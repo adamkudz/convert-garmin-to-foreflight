@@ -8,4 +8,7 @@ export { getFlightPositions } from './getFlightPositions';
 export { removeUploadDuplicates } from './removeUploadDuplicates';
 export { filterUploadFiles } from './filterUploadFiles';
 export { checkUploadFileLimit } from './checkUploadFileLimit';
-export { calculateDistanceBySegment } from './calculateDistanceBySegment';
+export {
+	calculateDistanceBySegment,
+	calculateDistanceWithoutWaypoints,
+} from './calculateDistanceBySegment';

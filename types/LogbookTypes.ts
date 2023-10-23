@@ -1,4 +1,5 @@
 import { User } from '@supabase/supabase-js';
+import { Avionics } from './GarminTypes';
 
 export interface PlatformConfig {
 	name: string;
@@ -67,6 +68,7 @@ export interface AircraftCompany {
 	companyName: string;
 	models: string[][];
 	acDefaultValues: AircraftDetails;
+	avionics: Avionics;
 }
 
 export interface Aircraft {
@@ -96,6 +98,7 @@ export interface Position {
 }
 
 export interface LB_PositionInfo {
+	[index: string]: string | number | object | undefined;
 	lcltime: string;
 	lcldate: string;
 	utcofst: object;
@@ -121,11 +124,24 @@ export interface ParseFileCallback {
 }
 
 export interface PapaReturnData {
-	[index: string]: string;
+	[index: string]: string | number | object | PapaReturn | undefined;
+	lcltime: string;
+	lcldate: string;
+	utcofst: object;
+	latitude: number;
+	longitude: number;
+	ias: number;
+	e1ng?: number;
+	atvwpt: string;
+	wptdst: number;
+	altind: number;
+	altmsl: number;
+	tas: number;
+	vspd: number;
 }
 
 export interface AptObj {
-	[index: string]: string | number;
+	[index: string]: string;
 	date: string;
 	apt: string;
 	tz: string;

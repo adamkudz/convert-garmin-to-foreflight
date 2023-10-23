@@ -15,3 +15,10 @@ export interface GarminFlightParams {
 	tas?: number;
 	vspd?: number;
 }
+
+export interface Avionics {
+	name: string;
+	headers: string[];
+	hasEngInst: boolean;
+	fileFilter: (flights: File[]) => File[];
+}

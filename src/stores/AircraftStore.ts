@@ -1,10 +1,12 @@
 import { defineStore } from 'pinia';
 import type { Aircraft } from '../../types/LogbookTypes';
+import { Avionics } from 'app/types/GarminTypes';
 
 export const useAircraftStore = defineStore('aircraft', {
 	state: () => ({
 		aircraft: <Aircraft | null>null,
 		aircraftCsv: <string | null>null,
+		avionics: <Avionics | null>null,
 	}),
 
 	getters: {
@@ -14,6 +16,9 @@ export const useAircraftStore = defineStore('aircraft', {
 		getAircraftCsv(state): string {
 			return state.aircraftCsv as string;
 		},
+		getAvionics(state): Avionics {
+			return state.avionics as Avionics;
+		},
 	},
 
 	actions: {
@@ -22,6 +27,9 @@ export const useAircraftStore = defineStore('aircraft', {
 		},
 		setAircraftCsv(csv: string) {
 			this.aircraftCsv = csv;
+		},
+		setAvionics(avionics: Avionics) {
+			this.avionics = avionics;
 		},
 	},
 });

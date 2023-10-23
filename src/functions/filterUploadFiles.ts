@@ -1,17 +1,8 @@
-export function filterUploadFiles(
-	flights: File[],
-	filterFunction?: (flights: File[]) => File[]
-) {
-	console.log(flights[0].type);
-	let relevantFiles;
+import type { Avionics } from 'app/types/GarminTypes';
 
-	if (!filterFunction) {
-		relevantFiles = flights.filter(
-			(_file) => !_file.name.includes('____') && _file.size >= 750000
-		);
-	} else {
-		relevantFiles = filterFunction(flights);
-	}
+export function filterUploadFiles(flights: File[], avionics: Avionics) {
+	const relevantFiles = avionics.fileFilter(flights);
+	console.log('relevantFiles: ', relevantFiles);
 
 	const filtered = relevantFiles.filter((_flight) => {
 		return (

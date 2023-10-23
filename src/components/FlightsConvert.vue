@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Papa from 'papaparse';
+import g1000nxi from 'src/avionics/g1000nxi';
 
 import { uid } from 'quasar';
 import { ref, computed } from 'vue';
@@ -9,7 +10,10 @@ import {
 	getFlightPositions,
 	filterUploadFiles,
 	calculateDistanceBySegment,
+	calculateDistanceWithoutWaypoints,
 } from 'src/functions/index.js';
+
+import { getAvionicsType } from 'src/functions/getAvionicsType';
 
 import type {
 	FlightEntry,
@@ -37,6 +41,7 @@ const aircraftId = computed(() => aircraftStore.getAircraftId);
 let selectedFiles: File[] = [];
 let removedFiles: File[] = [];
 let newEntries: FlightEntry[] = [];
+let selectedHeaders: string[] = [];
 
 function resetConverter(stReset = true) {
 	selectedFiles = [];
@@ -48,49 +53,22 @@ function resetConverter(stReset = true) {
 	}
 }
 
-function selectFiles(csvInput: HTMLInputElement) {
+async function selectFiles(csvInput: HTMLInputElement) {
 	if (!csvInput) {
 		return;
 	}
+	let csvArray = Array.from(csvInput.files || []);
+	let avionics = await getAvionicsType(csvArray);
+	if (avionics === undefined) {
+		avionics = g1000nxi;
+	}
+	selectedHeaders = avionics.headers;
+	const filtered = filterUploadFiles(csvArray, avionics);
 	step.value++;
 
-	let csv = Array.from(csvInput.files || []);
-	const filtered = filterUploadFiles(csv);
 	selectedFiles.push(...filtered);
 }
 
-async function sendRawFile(rawFile: File) {
-	try {
-		let reader = new FileReader();
-		let fileName = rawFile.name.split('.')[0];
-		reader.readAsBinaryString(rawFile);
-
-		reader.onload = async (evt) => {
-			await fetch(
-				`${
-					import.meta.env.VITE_API_URL
-				}/log/events/new-flights/rawdata`,
-				{
-					method: 'POST',
-					mode: 'cors',
-					headers: {
-						'Content-Type': 'text/plain',
-						charset: 'x-user-defined-binary',
-						'x-file-name': fileName,
-					},
-					body: evt.target?.result,
-				}
-			);
-		};
-	} catch (err) {
-		console.log('This is the catch error', err);
-	}
-}
-
-function getAircraftType(file: string) {
-	let aircraftType = file.split('airframe_name=')[1].split(',')[0];
-	return aircraftType;
-}
 function convertFlights(selectedFiles: File[]) {
 	emit('openModal', 'Converting Files');
 
@@ -140,11 +118,11 @@ function convertFlights(selectedFiles: File[]) {
 				transform: (value) => value.trim().replace(/\s/g, ''),
 
 				step: function (row: PapaReturn) {
-					let newObj: PapaReturnData = {};
-					defaultHeaders.forEach((head) => {
+					let newObj = {} as PapaReturnData;
+					selectedHeaders.forEach((head) => {
 						newObj[head] = row.data[head];
 					});
-					flightData.push(newObj as PapaReturnData);
+					flightData.push(newObj);
 				},
 
 				complete: async function () {
@@ -165,6 +143,12 @@ function convertFlights(selectedFiles: File[]) {
 					if (flightEntry) {
 						flightEntry.Distance =
 							calculateDistanceBySegment(flightEntry);
+						if (flightEntry.Distance === 0) {
+							flightEntry.Distance =
+								calculateDistanceWithoutWaypoints(
+									flightData
+								) as number;
+						}
 						newEntries.push(flightEntry as FlightEntry);
 						if (newEntries.length === uploadFiles.length) {
 							await api.post(
@@ -402,4 +386,4 @@ button {
 	margin: auto;
 }
 </style>
-src/companies
+src/companies src/functions/getAvionicsType

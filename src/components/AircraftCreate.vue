@@ -12,7 +12,8 @@ import { useGetModels } from 'src/composables/getModels';
 
 import { useAircraftStore } from 'src/stores/AircraftStore';
 import { api } from 'src/boot/axios';
-
+import { Avionics } from 'app/types/GarminTypes';
+const aircraftStore = useAircraftStore();
 const tailNumberInputRef = ref(null);
 const companyList = ['Daher', 'Cessna', 'Mooney'];
 const acList = ref<string[]>();
@@ -40,10 +41,12 @@ watch(
 	() => userInputs.value.Make,
 	(make) => {
 		console.log(make);
-		const { selectedModels, selectedDetails } = useGetModels(make);
+		const { selectedModels, selectedDetails, selectedAvionics } =
+			useGetModels(make);
 		acList.value = selectedModels.value?.map((x) => x[0]);
 		aircraftDetails.value = selectedDetails.value as AircraftDetails;
 		userInputs.value.Model = selectedModels.value?.[0][0] as string;
+		aircraftStore.setAvionics(selectedAvionics.value as Avionics);
 	},
 
 	{ immediate: true }

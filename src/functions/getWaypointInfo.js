@@ -11,7 +11,8 @@ export function getWaypointInfo(flight, offIndex, onIndex) {
 				!r.includes('00') &&
 				!r.includes('-1') &&
 				!r.includes('_____') &&
-				!r.includes('RW')
+				!r.includes('RW') &&
+				!r.includes('GARMN')
 			) {
 				return r;
 			}

@@ -2,6 +2,7 @@
 //
 
 import { AircraftCompany } from 'app/types/LogbookTypes';
+import g1000nxi from 'src/avionics/g1000nxi';
 
 const Daher = <AircraftCompany>{
 	companyName: 'Daher',
@@ -29,6 +30,7 @@ const Daher = <AircraftCompany>{
 		HighPerformance: true,
 		Pressurized: true,
 	},
+	avionics: g1000nxi,
 };
 
 export default Daher;

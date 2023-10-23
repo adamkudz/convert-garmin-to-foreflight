@@ -1,4 +1,5 @@
 import { AircraftCompany } from 'app/types/LogbookTypes';
+import gi275 from 'src/avionics/gi275';
 
 //mooney
 const Mooney = <AircraftCompany>{
@@ -23,6 +24,7 @@ const Mooney = <AircraftCompany>{
 		HighPerformance: false,
 		Pressurized: false,
 	},
+	avionics: gi275,
 };
 
 export default Mooney;
