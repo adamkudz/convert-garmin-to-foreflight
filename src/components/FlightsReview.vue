@@ -71,7 +71,7 @@ function createFlightCsvFromGarmin(format = 'foreflight') {
 					flightEntries[0].AircraftID,
 					`${format}-${spacetime(flightEntries[0].Date).format(
 						'numeric-us'
-					)}')`
+					)}`
 				);
 
 				showPreview.value = false;

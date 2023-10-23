@@ -77,21 +77,6 @@ function convertFlights(selectedFiles: File[]) {
 		return;
 	}
 
-	let defaultHeaders = [
-		'lcltime',
-		'lcldate',
-		'utcofst',
-		'latitude',
-		'longitude',
-		'ias',
-		'e1ng',
-		'atvwpt',
-		'wptdst',
-		'altind',
-		'altmsl',
-		'tas',
-		'vspd',
-	];
 	try {
 		async function parseFile(file: File) {
 			if (!file) {

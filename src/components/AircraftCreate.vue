@@ -3,7 +3,6 @@ import { ref, watch, onMounted } from 'vue';
 import type {
 	AircraftDetails,
 	AircraftUserInputs,
-	AircraftCompany,
 } from 'app/types/LogbookTypes';
 import { useVuelidate } from '@vuelidate/core';
 import { required, alphaNum, helpers, maxLength } from '@vuelidate/validators';
@@ -15,7 +14,7 @@ import { api } from 'src/boot/axios';
 import { Avionics } from 'app/types/GarminTypes';
 const aircraftStore = useAircraftStore();
 const tailNumberInputRef = ref(null);
-const companyList = ['Daher', 'Cessna', 'Mooney'];
+const companyList = ['Daher', 'Mooney'];
 const acList = ref<string[]>();
 
 const userInputs = ref<AircraftUserInputs>({
