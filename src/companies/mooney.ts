@@ -1,4 +1,9 @@
-import { AircraftCompany } from 'app/types/LogbookTypes';
+import {
+	AircraftCompany,
+	Aircraft,
+	AircraftDetails,
+} from 'app/types/LogbookTypes';
+
 import gi275 from 'src/avionics/gi275';
 
 //mooney
@@ -12,18 +17,19 @@ const Mooney = <AircraftCompany>{
 		['M20S', 'M20S'],
 		['M20T', 'M20T'],
 	],
-	acDefaultValues: {
+	acDefaultValues: <AircraftDetails>{
 		EquipmentType: 'Aircraft',
 		TypeCode: '',
 		Category: 'airplane',
 		Class: 'airplane_single_engine_land',
-		GearType: 'fixed_tricycle',
+		GearType: 'retractable_tricycle',
 		EngineType: 'Piston',
-		Complex: false,
+		Complex: true,
 		TAA: true,
-		HighPerformance: false,
-		Pressurized: false,
+		HighPerformance: true,
+		Pressurized: true,
 	},
+
 	avionics: gi275,
 };
 
