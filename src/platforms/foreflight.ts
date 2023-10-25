@@ -88,6 +88,53 @@ const config = {
 		});
 		return csvArray;
 	},
+	aircraftOptions: {
+		categoryClass: [
+			'Airplane Single Engine Lane (ASEL)',
+			'Airplane Multi Engine Land (AMEL)',
+			'Airplane Single Engine Sea (AMES)',
+			'Airplace Single Engine Sea (ASES)',
+			'Rotorcraft Helicopter (RH)',
+			'Rotorcraft Gyroplane (RG)',
+			'Glider (GL)',
+			'Lighter Than Air Airship (LA)',
+			'Lighter Than Air Balloon (LTB)',
+			'Powered Lift (PLIFT)',
+			'Powered Parachute Land (PL)',
+			'Powered Parachute Sea (PS)',
+			'Weight Shift Control Land (WL)',
+			'Weight Shift Control Sea (WS)',
+		],
+		EquipmentType: [
+			'Aircraft',
+			'Full Flight Simulator (FFS)',
+			'Flight Training Device (FTD)',
+			'Basic Aircraft Training Device (BATD)',
+			'Advanced Aircraft Training Device (AATD)',
+		],
+		GearType: [
+			'None',
+			'Fixed Tailwheel (FC)',
+			'Fixed Tricycle (FT)',
+			'Amphibian (AM)',
+			'Retractable Tailwheel (RC)',
+			'Fixed Tailwheel (FC)',
+			'Skids',
+			'Skis',
+			'Floats (FL)',
+		],
+		EngineType: [
+			'Diesel',
+			'Electric',
+			'Non-Powered',
+			'Piston',
+			'Radial',
+			'TurboFan',
+			'TurboShaft',
+			'Turboprop',
+			'Turbojet',
+		],
+	},
 };
 
 export default config;
